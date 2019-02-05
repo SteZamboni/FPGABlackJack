@@ -1,0 +1,8 @@
+work	"Clock_Regulator.vhd"
+work	"Constants.vhd"
+work	"Debounce_Switch.vhd"
+work	"Drawer.vhd"
+work	"Master_Module.vhd"
+work	"Synchronizer.vhd"
+work	"VRam_3Bit.vhd"
+work	"Vga.vhd"

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Stefano\Desktop\Master_Mark_2\Master_Module.ncd
+OUTFILE=C:\Users\Stefano\Desktop\Master_Mark_2\Master_Module.bit
+FAMILY=Zynq
+PART=xc7z010-3clg400
+WORKINGDIR=C:\Users\Stefano\Desktop\Master_Mark_2
+LICENSE=WebPack
+USER_INFO=211168112_0_0_050

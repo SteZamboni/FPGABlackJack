@@ -1,0 +1,1046 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml Master_Module.twx Master_Module.ncd -o Master_Module.twr
+Master_Module.pcf -ucf ZYBO_Master.ucf
+
+Design file:              Master_Module.ncd
+Physical constraint file: Master_Module.pcf
+Device,package,speed:     xc7z010,clg400,C,-3 (PRELIMINARY 1.08 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 125 MHz HIGH 
+50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   4.000ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 125 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 4.000ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 8.000ns
+  Low pulse: 4.000ns
+  Low pulse limit: 2.000ns (Tmmcmpw_CLKIN1_100_150)
+  Physical resource: CR/mmcm_adv_inst/CLKIN1
+  Logical resource: CR/mmcm_adv_inst/CLKIN1
+  Location pin: MMCME2_ADV_X0Y1.CLKIN1
+  Clock network: CR/clkin1
+--------------------------------------------------------------------------------
+Slack: 4.000ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 8.000ns
+  High pulse: 4.000ns
+  High pulse limit: 2.000ns (Tmmcmpw_CLKIN1_100_150)
+  Physical resource: CR/mmcm_adv_inst/CLKIN1
+  Logical resource: CR/mmcm_adv_inst/CLKIN1
+  Location pin: MMCME2_ADV_X0Y1.CLKIN1
+  Clock network: CR/clkin1
+--------------------------------------------------------------------------------
+Slack: 6.751ns (period - min period limit)
+  Period: 8.000ns
+  Min period limit: 1.249ns (800.641MHz) (Tmmcmper_CLKIN(Finmax))
+  Physical resource: CR/mmcm_adv_inst/CLKIN1
+  Logical resource: CR/mmcm_adv_inst/CLKIN1
+  Location pin: MMCME2_ADV_X0Y1.CLKIN1
+  Clock network: CR/clkin1
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_CR_clkout0 = PERIOD TIMEGRP "CR_clkout0" TS_sys_clk_pin 
+HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 17873 paths analyzed, 3047 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   4.582ns.
+--------------------------------------------------------------------------------
+
+Paths for end point Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T (RAMB36_X2Y13.ADDRARDADDRL13), 3 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     3.418ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_VRam_Address_13 (FF)
+  Destination:          Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T (RAM)
+  Requirement:          8.000ns
+  Data Path Delay:      4.388ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.125ns (1.145 - 1.270)
+  Source Clock:         r_Clock_125 rising at 0.000ns
+  Destination Clock:    r_Clock_125 rising at 8.000ns
+  Clock Uncertainty:    0.069ns
+
+  Clock Uncertainty:          0.069ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.118ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_VRam_Address_13 to Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T
+    Location                    Delay type         Delay(ns)  Physical Resource
+                                                              Logical Resource(s)
+    --------------------------------------------------------  -------------------
+    SLICE_X24Y35.BMUX           Tshcko                0.466   Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_VRam_Address<14>
+                                                              Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_VRam_Address_13
+    SLICE_X26Y39.B1             net (fanout=1)        0.931   Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_VRam_Address<13>
+    SLICE_X26Y39.B              Tilo                  0.097   r_Players_Vram_Address<7>
+                                                              Players_Mod/Mmux_o_Players_Vram_Address51
+    RAMB36_X2Y13.ADDRARDADDRL13 net (fanout=36)       2.452   r_Players_Vram_Address<13>
+    RAMB36_X2Y13.CLKARDCLKL     Trcck_ADDRA           0.442   Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T
+                                                              Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T
+    --------------------------------------------------------  ---------------------------
+    Total                                             4.388ns (1.005ns logic, 3.383ns route)
+                                                              (22.9% logic, 77.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     3.800ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Players_Mod/P1/r_Player_VRam_Address_13 (FF)
+  Destination:          Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T (RAM)
+  Requirement:          8.000ns
+  Data Path Delay:      3.998ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.133ns (1.145 - 1.278)
+  Source Clock:         r_Clock_125 rising at 0.000ns
+  Destination Clock:    r_Clock_125 rising at 8.000ns
+  Clock Uncertainty:    0.069ns
+
+  Clock Uncertainty:          0.069ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.118ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Players_Mod/P1/r_Player_VRam_Address_13 to Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T
+    Location                    Delay type         Delay(ns)  Physical Resource
+                                                              Logical Resource(s)
+    --------------------------------------------------------  -------------------
+    SLICE_X28Y38.BQ             Tcko                  0.393   Players_Mod/P1/r_Player_VRam_Address<15>
+                                                              Players_Mod/P1/r_Player_VRam_Address_13
+    SLICE_X26Y39.B2             net (fanout=1)        0.614   Players_Mod/P1/r_Player_VRam_Address<13>
+    SLICE_X26Y39.B              Tilo                  0.097   r_Players_Vram_Address<7>
+                                                              Players_Mod/Mmux_o_Players_Vram_Address51
+    RAMB36_X2Y13.ADDRARDADDRL13 net (fanout=36)       2.452   r_Players_Vram_Address<13>
+    RAMB36_X2Y13.CLKARDCLKL     Trcck_ADDRA           0.442   Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T
+                                                              Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T
+    --------------------------------------------------------  ---------------------------
+    Total                                             3.998ns (0.932ns logic, 3.066ns route)
+                                                              (23.3% logic, 76.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     4.136ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Players_Mod/P2/r_Player_VRam_Address_13 (FF)
+  Destination:          Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T (RAM)
+  Requirement:          8.000ns
+  Data Path Delay:      3.663ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.132ns (1.145 - 1.277)
+  Source Clock:         r_Clock_125 rising at 0.000ns
+  Destination Clock:    r_Clock_125 rising at 8.000ns
+  Clock Uncertainty:    0.069ns
+
+  Clock Uncertainty:          0.069ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.118ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Players_Mod/P2/r_Player_VRam_Address_13 to Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T
+    Location                    Delay type         Delay(ns)  Physical Resource
+                                                              Logical Resource(s)
+    --------------------------------------------------------  -------------------
+    SLICE_X26Y37.BQ             Tcko                  0.341   Players_Mod/P2/r_Player_VRam_Address<15>
+                                                              Players_Mod/P2/r_Player_VRam_Address_13
+    SLICE_X26Y39.B6             net (fanout=1)        0.331   Players_Mod/P2/r_Player_VRam_Address<13>
+    SLICE_X26Y39.B              Tilo                  0.097   r_Players_Vram_Address<7>
+                                                              Players_Mod/Mmux_o_Players_Vram_Address51
+    RAMB36_X2Y13.ADDRARDADDRL13 net (fanout=36)       2.452   r_Players_Vram_Address<13>
+    RAMB36_X2Y13.CLKARDCLKL     Trcck_ADDRA           0.442   Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T
+                                                              Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T
+    --------------------------------------------------------  ---------------------------
+    Total                                             3.663ns (0.880ns logic, 2.783ns route)
+                                                              (24.0% logic, 76.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T (RAMB36_X2Y13.ADDRARDADDRU13), 3 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     3.418ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_VRam_Address_13 (FF)
+  Destination:          Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T (RAM)
+  Requirement:          8.000ns
+  Data Path Delay:      4.388ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.125ns (1.145 - 1.270)
+  Source Clock:         r_Clock_125 rising at 0.000ns
+  Destination Clock:    r_Clock_125 rising at 8.000ns
+  Clock Uncertainty:    0.069ns
+
+  Clock Uncertainty:          0.069ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.118ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_VRam_Address_13 to Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T
+    Location                    Delay type         Delay(ns)  Physical Resource
+                                                              Logical Resource(s)
+    --------------------------------------------------------  -------------------
+    SLICE_X24Y35.BMUX           Tshcko                0.466   Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_VRam_Address<14>
+                                                              Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_VRam_Address_13
+    SLICE_X26Y39.B1             net (fanout=1)        0.931   Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_VRam_Address<13>
+    SLICE_X26Y39.B              Tilo                  0.097   r_Players_Vram_Address<7>
+                                                              Players_Mod/Mmux_o_Players_Vram_Address51
+    RAMB36_X2Y13.ADDRARDADDRU13 net (fanout=36)       2.452   r_Players_Vram_Address<13>
+    RAMB36_X2Y13.CLKARDCLKU     Trcck_ADDRA           0.442   Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T
+                                                              Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T
+    --------------------------------------------------------  ---------------------------
+    Total                                             4.388ns (1.005ns logic, 3.383ns route)
+                                                              (22.9% logic, 77.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     3.800ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Players_Mod/P1/r_Player_VRam_Address_13 (FF)
+  Destination:          Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T (RAM)
+  Requirement:          8.000ns
+  Data Path Delay:      3.998ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.133ns (1.145 - 1.278)
+  Source Clock:         r_Clock_125 rising at 0.000ns
+  Destination Clock:    r_Clock_125 rising at 8.000ns
+  Clock Uncertainty:    0.069ns
+
+  Clock Uncertainty:          0.069ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.118ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Players_Mod/P1/r_Player_VRam_Address_13 to Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T
+    Location                    Delay type         Delay(ns)  Physical Resource
+                                                              Logical Resource(s)
+    --------------------------------------------------------  -------------------
+    SLICE_X28Y38.BQ             Tcko                  0.393   Players_Mod/P1/r_Player_VRam_Address<15>
+                                                              Players_Mod/P1/r_Player_VRam_Address_13
+    SLICE_X26Y39.B2             net (fanout=1)        0.614   Players_Mod/P1/r_Player_VRam_Address<13>
+    SLICE_X26Y39.B              Tilo                  0.097   r_Players_Vram_Address<7>
+                                                              Players_Mod/Mmux_o_Players_Vram_Address51
+    RAMB36_X2Y13.ADDRARDADDRU13 net (fanout=36)       2.452   r_Players_Vram_Address<13>
+    RAMB36_X2Y13.CLKARDCLKU     Trcck_ADDRA           0.442   Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T
+                                                              Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T
+    --------------------------------------------------------  ---------------------------
+    Total                                             3.998ns (0.932ns logic, 3.066ns route)
+                                                              (23.3% logic, 76.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     4.136ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Players_Mod/P2/r_Player_VRam_Address_13 (FF)
+  Destination:          Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T (RAM)
+  Requirement:          8.000ns
+  Data Path Delay:      3.663ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.132ns (1.145 - 1.277)
+  Source Clock:         r_Clock_125 rising at 0.000ns
+  Destination Clock:    r_Clock_125 rising at 8.000ns
+  Clock Uncertainty:    0.069ns
+
+  Clock Uncertainty:          0.069ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.118ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Players_Mod/P2/r_Player_VRam_Address_13 to Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T
+    Location                    Delay type         Delay(ns)  Physical Resource
+                                                              Logical Resource(s)
+    --------------------------------------------------------  -------------------
+    SLICE_X26Y37.BQ             Tcko                  0.341   Players_Mod/P2/r_Player_VRam_Address<15>
+                                                              Players_Mod/P2/r_Player_VRam_Address_13
+    SLICE_X26Y39.B6             net (fanout=1)        0.331   Players_Mod/P2/r_Player_VRam_Address<13>
+    SLICE_X26Y39.B              Tilo                  0.097   r_Players_Vram_Address<7>
+                                                              Players_Mod/Mmux_o_Players_Vram_Address51
+    RAMB36_X2Y13.ADDRARDADDRU13 net (fanout=36)       2.452   r_Players_Vram_Address<13>
+    RAMB36_X2Y13.CLKARDCLKU     Trcck_ADDRA           0.442   Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T
+                                                              Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T
+    --------------------------------------------------------  ---------------------------
+    Total                                             3.663ns (0.880ns logic, 2.783ns route)
+                                                              (24.0% logic, 76.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T (RAMB36_X1Y14.ADDRARDADDRL13), 3 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     3.593ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_VRam_Address_13 (FF)
+  Destination:          Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T (RAM)
+  Requirement:          8.000ns
+  Data Path Delay:      4.206ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.132ns (1.138 - 1.270)
+  Source Clock:         r_Clock_125 rising at 0.000ns
+  Destination Clock:    r_Clock_125 rising at 8.000ns
+  Clock Uncertainty:    0.069ns
+
+  Clock Uncertainty:          0.069ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.118ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_VRam_Address_13 to Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T
+    Location                    Delay type         Delay(ns)  Physical Resource
+                                                              Logical Resource(s)
+    --------------------------------------------------------  -------------------
+    SLICE_X24Y35.BMUX           Tshcko                0.466   Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_VRam_Address<14>
+                                                              Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_VRam_Address_13
+    SLICE_X26Y39.B1             net (fanout=1)        0.931   Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_VRam_Address<13>
+    SLICE_X26Y39.B              Tilo                  0.097   r_Players_Vram_Address<7>
+                                                              Players_Mod/Mmux_o_Players_Vram_Address51
+    RAMB36_X1Y14.ADDRARDADDRL13 net (fanout=36)       2.270   r_Players_Vram_Address<13>
+    RAMB36_X1Y14.CLKARDCLKL     Trcck_ADDRA           0.442   Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T
+                                                              Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T
+    --------------------------------------------------------  ---------------------------
+    Total                                             4.206ns (1.005ns logic, 3.201ns route)
+                                                              (23.9% logic, 76.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     3.975ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Players_Mod/P1/r_Player_VRam_Address_13 (FF)
+  Destination:          Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T (RAM)
+  Requirement:          8.000ns
+  Data Path Delay:      3.816ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.140ns (1.138 - 1.278)
+  Source Clock:         r_Clock_125 rising at 0.000ns
+  Destination Clock:    r_Clock_125 rising at 8.000ns
+  Clock Uncertainty:    0.069ns
+
+  Clock Uncertainty:          0.069ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.118ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Players_Mod/P1/r_Player_VRam_Address_13 to Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T
+    Location                    Delay type         Delay(ns)  Physical Resource
+                                                              Logical Resource(s)
+    --------------------------------------------------------  -------------------
+    SLICE_X28Y38.BQ             Tcko                  0.393   Players_Mod/P1/r_Player_VRam_Address<15>
+                                                              Players_Mod/P1/r_Player_VRam_Address_13
+    SLICE_X26Y39.B2             net (fanout=1)        0.614   Players_Mod/P1/r_Player_VRam_Address<13>
+    SLICE_X26Y39.B              Tilo                  0.097   r_Players_Vram_Address<7>
+                                                              Players_Mod/Mmux_o_Players_Vram_Address51
+    RAMB36_X1Y14.ADDRARDADDRL13 net (fanout=36)       2.270   r_Players_Vram_Address<13>
+    RAMB36_X1Y14.CLKARDCLKL     Trcck_ADDRA           0.442   Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T
+                                                              Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T
+    --------------------------------------------------------  ---------------------------
+    Total                                             3.816ns (0.932ns logic, 2.884ns route)
+                                                              (24.4% logic, 75.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     4.311ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Players_Mod/P2/r_Player_VRam_Address_13 (FF)
+  Destination:          Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T (RAM)
+  Requirement:          8.000ns
+  Data Path Delay:      3.481ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.139ns (1.138 - 1.277)
+  Source Clock:         r_Clock_125 rising at 0.000ns
+  Destination Clock:    r_Clock_125 rising at 8.000ns
+  Clock Uncertainty:    0.069ns
+
+  Clock Uncertainty:          0.069ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.118ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Players_Mod/P2/r_Player_VRam_Address_13 to Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T
+    Location                    Delay type         Delay(ns)  Physical Resource
+                                                              Logical Resource(s)
+    --------------------------------------------------------  -------------------
+    SLICE_X26Y37.BQ             Tcko                  0.341   Players_Mod/P2/r_Player_VRam_Address<15>
+                                                              Players_Mod/P2/r_Player_VRam_Address_13
+    SLICE_X26Y39.B6             net (fanout=1)        0.331   Players_Mod/P2/r_Player_VRam_Address<13>
+    SLICE_X26Y39.B              Tilo                  0.097   r_Players_Vram_Address<7>
+                                                              Players_Mod/Mmux_o_Players_Vram_Address51
+    RAMB36_X1Y14.ADDRARDADDRL13 net (fanout=36)       2.270   r_Players_Vram_Address<13>
+    RAMB36_X1Y14.CLKARDCLKL     Trcck_ADDRA           0.442   Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T
+                                                              Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T
+    --------------------------------------------------------  ---------------------------
+    Total                                             3.481ns (0.880ns logic, 2.601ns route)
+                                                              (25.3% logic, 74.7% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_CR_clkout0 = PERIOD TIMEGRP "CR_clkout0" TS_sys_clk_pin HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point Players_Mod/CG/Seed_Rom/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM18.ram (RAMB18_X1Y5.ADDRARDADDR13), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.052ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Players_Mod/CG/r_Card_Seed_Address_11 (FF)
+  Destination:          Players_Mod/CG/Seed_Rom/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM18.ram (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.103ns (Levels of Logic = 0)
+  Clock Path Skew:      0.051ns (0.118 - 0.067)
+  Source Clock:         r_Clock_125 rising at 8.000ns
+  Destination Clock:    r_Clock_125 rising at 8.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: Players_Mod/CG/r_Card_Seed_Address_11 to Players_Mod/CG/Seed_Rom/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM18.ram
+    Location                  Delay type         Delay(ns)  Physical Resource
+                                                            Logical Resource(s)
+    ------------------------------------------------------  -------------------
+    SLICE_X26Y13.DQ           Tcko                  0.141   Players_Mod/CG/r_Card_Seed_Address<11>
+                                                            Players_Mod/CG/r_Card_Seed_Address_11
+    RAMB18_X1Y5.ADDRARDADDR13 net (fanout=1)        0.145   Players_Mod/CG/r_Card_Seed_Address<11>
+    RAMB18_X1Y5.CLKARDCLK     Trckc_ADDRA (-Th)     0.183   Players_Mod/CG/Seed_Rom/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM18.ram
+                                                            Players_Mod/CG/Seed_Rom/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM18.ram
+    ------------------------------------------------------  ---------------------------
+    Total                                           0.103ns (-0.042ns logic, 0.145ns route)
+                                                            (-40.8% logic, 140.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Players_Mod/CG/Seed_Rom/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM18.ram (RAMB18_X1Y5.ADDRARDADDR11), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.053ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Players_Mod/CG/r_Card_Seed_Address_9 (FF)
+  Destination:          Players_Mod/CG/Seed_Rom/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM18.ram (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.104ns (Levels of Logic = 0)
+  Clock Path Skew:      0.051ns (0.118 - 0.067)
+  Source Clock:         r_Clock_125 rising at 8.000ns
+  Destination Clock:    r_Clock_125 rising at 8.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: Players_Mod/CG/r_Card_Seed_Address_9 to Players_Mod/CG/Seed_Rom/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM18.ram
+    Location                  Delay type         Delay(ns)  Physical Resource
+                                                            Logical Resource(s)
+    ------------------------------------------------------  -------------------
+    SLICE_X26Y13.BQ           Tcko                  0.141   Players_Mod/CG/r_Card_Seed_Address<11>
+                                                            Players_Mod/CG/r_Card_Seed_Address_9
+    RAMB18_X1Y5.ADDRARDADDR11 net (fanout=1)        0.146   Players_Mod/CG/r_Card_Seed_Address<9>
+    RAMB18_X1Y5.CLKARDCLK     Trckc_ADDRA (-Th)     0.183   Players_Mod/CG/Seed_Rom/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM18.ram
+                                                            Players_Mod/CG/Seed_Rom/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM18.ram
+    ------------------------------------------------------  ---------------------------
+    Total                                           0.104ns (-0.042ns logic, 0.146ns route)
+                                                            (-40.4% logic, 140.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Players_Mod/CG/Seed_Rom/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM18.ram (RAMB18_X1Y5.ADDRARDADDR7), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.053ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Players_Mod/CG/r_Card_Seed_Address_5 (FF)
+  Destination:          Players_Mod/CG/Seed_Rom/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM18.ram (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.103ns (Levels of Logic = 0)
+  Clock Path Skew:      0.050ns (0.118 - 0.068)
+  Source Clock:         r_Clock_125 rising at 8.000ns
+  Destination Clock:    r_Clock_125 rising at 8.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: Players_Mod/CG/r_Card_Seed_Address_5 to Players_Mod/CG/Seed_Rom/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM18.ram
+    Location                 Delay type         Delay(ns)  Physical Resource
+                                                           Logical Resource(s)
+    -----------------------------------------------------  -------------------
+    SLICE_X26Y12.BQ          Tcko                  0.141   Players_Mod/CG/r_Card_Seed_Address<7>
+                                                           Players_Mod/CG/r_Card_Seed_Address_5
+    RAMB18_X1Y5.ADDRARDADDR7 net (fanout=1)        0.145   Players_Mod/CG/r_Card_Seed_Address<5>
+    RAMB18_X1Y5.CLKARDCLK    Trckc_ADDRA (-Th)     0.183   Players_Mod/CG/Seed_Rom/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM18.ram
+                                                           Players_Mod/CG/Seed_Rom/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM18.ram
+    -----------------------------------------------------  ---------------------------
+    Total                                          0.103ns (-0.042ns logic, 0.145ns route)
+                                                           (-40.8% logic, 140.8% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_CR_clkout0 = PERIOD TIMEGRP "CR_clkout0" TS_sys_clk_pin HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 5.859ns (period - min period limit)
+  Period: 8.000ns
+  Min period limit: 2.141ns (467.071MHz) (Trper_CLKA)
+  Physical resource: Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B/CLKARDCLKL
+  Logical resource: Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B/CLKARDCLKL
+  Location pin: RAMB36_X1Y7.CLKARDCLKL
+  Clock network: r_Clock_125
+--------------------------------------------------------------------------------
+Slack: 5.859ns (period - min period limit)
+  Period: 8.000ns
+  Min period limit: 2.141ns (467.071MHz) (Trper_CLK_WF_NC(FMAX_CAS_WF_NC))
+  Physical resource: Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B/CLKARDCLKU
+  Logical resource: Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B/CLKARDCLKU
+  Location pin: RAMB36_X1Y7.CLKARDCLKU
+  Clock network: r_Clock_125
+--------------------------------------------------------------------------------
+Slack: 5.859ns (period - min period limit)
+  Period: 8.000ns
+  Min period limit: 2.141ns (467.071MHz) (Trper_CLKA)
+  Physical resource: Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T/CLKARDCLKL
+  Logical resource: Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T/CLKARDCLKL
+  Location pin: RAMB36_X1Y14.CLKARDCLKL
+  Clock network: r_Clock_125
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_CR_clkout1 = PERIOD TIMEGRP "CR_clkout1" TS_sys_clk_pin * 
+0.32 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 5484 paths analyzed, 1285 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   4.365ns.
+--------------------------------------------------------------------------------
+
+Paths for end point Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_9 (SLICE_X34Y56.CIN), 299 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     20.635ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Vga_Mod/Syncro/HPOS_9 (FF)
+  Destination:          Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_9 (FF)
+  Requirement:          25.000ns
+  Data Path Delay:      4.226ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.057ns (0.563 - 0.620)
+  Source Clock:         r_Clock_40 rising at 0.000ns
+  Destination Clock:    r_Clock_40 rising at 25.000ns
+  Clock Uncertainty:    0.082ns
+
+  Clock Uncertainty:          0.082ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.147ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Vga_Mod/Syncro/HPOS_9 to Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X33Y54.CQ      Tcko                  0.341   Vga_Mod/Syncro/HPOS<9>
+                                                       Vga_Mod/Syncro/HPOS_9
+    SLICE_X33Y53.B2      net (fanout=8)        0.967   Vga_Mod/Syncro/HPOS<9>
+    SLICE_X33Y53.B       Tilo                  0.097   Vga_Mod/Syncro/HPOS<4>
+                                                       Vga_Mod/Syncro/GND_43_o_INV_14_o111
+    SLICE_X34Y57.C5      net (fanout=20)       0.826   Vga_Mod/Syncro/GND_43_o_INV_14_o11
+    SLICE_X34Y57.C       Tilo                  0.097   Vga_Mod/Syncro/r_MemorySyncro_VPOS_4<7>
+                                                       Vga_Mod/Syncro/HPOS[10]_PWR_13_o_LessThan_20_o12
+    SLICE_X36Y55.A4      net (fanout=11)       0.957   Vga_Mod/Syncro/HPOS[10]_PWR_13_o_LessThan_20_o
+    SLICE_X36Y55.A       Tilo                  0.097   Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_A<4>
+                                                       Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_A61
+    SLICE_X34Y55.AX      net (fanout=1)        0.304   Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_A<4>
+    SLICE_X34Y55.COUT    Taxcy                 0.411   Vga_Mod/Syncro/r_MemorySyncro_HPOS_4<7>
+                                                       Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_cy<7>
+    SLICE_X34Y56.CIN     net (fanout=1)        0.000   Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_cy<7>
+    SLICE_X34Y56.CLK     Tcinck                0.129   Vga_Mod/Syncro/r_MemorySyncro_HPOS_4<10>
+                                                       Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_xor<10>
+                                                       Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_9
+    -------------------------------------------------  ---------------------------
+    Total                                      4.226ns (1.172ns logic, 3.054ns route)
+                                                       (27.7% logic, 72.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     20.776ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Vga_Mod/Syncro/HPOS_9 (FF)
+  Destination:          Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_9 (FF)
+  Requirement:          25.000ns
+  Data Path Delay:      4.085ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.057ns (0.563 - 0.620)
+  Source Clock:         r_Clock_40 rising at 0.000ns
+  Destination Clock:    r_Clock_40 rising at 25.000ns
+  Clock Uncertainty:    0.082ns
+
+  Clock Uncertainty:          0.082ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.147ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Vga_Mod/Syncro/HPOS_9 to Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X33Y54.CQ      Tcko                  0.341   Vga_Mod/Syncro/HPOS<9>
+                                                       Vga_Mod/Syncro/HPOS_9
+    SLICE_X33Y53.B2      net (fanout=8)        0.967   Vga_Mod/Syncro/HPOS<9>
+    SLICE_X33Y53.B       Tilo                  0.097   Vga_Mod/Syncro/HPOS<4>
+                                                       Vga_Mod/Syncro/GND_43_o_INV_14_o111
+    SLICE_X34Y57.C5      net (fanout=20)       0.826   Vga_Mod/Syncro/GND_43_o_INV_14_o11
+    SLICE_X34Y57.C       Tilo                  0.097   Vga_Mod/Syncro/r_MemorySyncro_VPOS_4<7>
+                                                       Vga_Mod/Syncro/HPOS[10]_PWR_13_o_LessThan_20_o12
+    SLICE_X34Y53.C3      net (fanout=11)       0.829   Vga_Mod/Syncro/HPOS[10]_PWR_13_o_LessThan_20_o
+    SLICE_X34Y53.C       Tilo                  0.097   N72
+                                                       Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_A7
+    SLICE_X34Y55.BX      net (fanout=1)        0.316   Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_lut<5>
+    SLICE_X34Y55.COUT    Tbxcy                 0.386   Vga_Mod/Syncro/r_MemorySyncro_HPOS_4<7>
+                                                       Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_cy<7>
+    SLICE_X34Y56.CIN     net (fanout=1)        0.000   Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_cy<7>
+    SLICE_X34Y56.CLK     Tcinck                0.129   Vga_Mod/Syncro/r_MemorySyncro_HPOS_4<10>
+                                                       Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_xor<10>
+                                                       Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_9
+    -------------------------------------------------  ---------------------------
+    Total                                      4.085ns (1.147ns logic, 2.938ns route)
+                                                       (28.1% logic, 71.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     20.845ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Vga_Mod/Syncro/HPOS_7 (FF)
+  Destination:          Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_9 (FF)
+  Requirement:          25.000ns
+  Data Path Delay:      4.016ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.057ns (0.563 - 0.620)
+  Source Clock:         r_Clock_40 rising at 0.000ns
+  Destination Clock:    r_Clock_40 rising at 25.000ns
+  Clock Uncertainty:    0.082ns
+
+  Clock Uncertainty:          0.082ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.147ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Vga_Mod/Syncro/HPOS_7 to Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X33Y55.DQ      Tcko                  0.341   Vga_Mod/Syncro/HPOS<7>
+                                                       Vga_Mod/Syncro/HPOS_7
+    SLICE_X33Y53.B1      net (fanout=14)       0.757   Vga_Mod/Syncro/HPOS<7>
+    SLICE_X33Y53.B       Tilo                  0.097   Vga_Mod/Syncro/HPOS<4>
+                                                       Vga_Mod/Syncro/GND_43_o_INV_14_o111
+    SLICE_X34Y57.C5      net (fanout=20)       0.826   Vga_Mod/Syncro/GND_43_o_INV_14_o11
+    SLICE_X34Y57.C       Tilo                  0.097   Vga_Mod/Syncro/r_MemorySyncro_VPOS_4<7>
+                                                       Vga_Mod/Syncro/HPOS[10]_PWR_13_o_LessThan_20_o12
+    SLICE_X36Y55.A4      net (fanout=11)       0.957   Vga_Mod/Syncro/HPOS[10]_PWR_13_o_LessThan_20_o
+    SLICE_X36Y55.A       Tilo                  0.097   Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_A<4>
+                                                       Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_A61
+    SLICE_X34Y55.AX      net (fanout=1)        0.304   Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_A<4>
+    SLICE_X34Y55.COUT    Taxcy                 0.411   Vga_Mod/Syncro/r_MemorySyncro_HPOS_4<7>
+                                                       Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_cy<7>
+    SLICE_X34Y56.CIN     net (fanout=1)        0.000   Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_cy<7>
+    SLICE_X34Y56.CLK     Tcinck                0.129   Vga_Mod/Syncro/r_MemorySyncro_HPOS_4<10>
+                                                       Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_xor<10>
+                                                       Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_9
+    -------------------------------------------------  ---------------------------
+    Total                                      4.016ns (1.172ns logic, 2.844ns route)
+                                                       (29.2% logic, 70.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_10 (SLICE_X34Y56.CIN), 299 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     20.678ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Vga_Mod/Syncro/HPOS_9 (FF)
+  Destination:          Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_10 (FF)
+  Requirement:          25.000ns
+  Data Path Delay:      4.183ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.057ns (0.563 - 0.620)
+  Source Clock:         r_Clock_40 rising at 0.000ns
+  Destination Clock:    r_Clock_40 rising at 25.000ns
+  Clock Uncertainty:    0.082ns
+
+  Clock Uncertainty:          0.082ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.147ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Vga_Mod/Syncro/HPOS_9 to Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_10
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X33Y54.CQ      Tcko                  0.341   Vga_Mod/Syncro/HPOS<9>
+                                                       Vga_Mod/Syncro/HPOS_9
+    SLICE_X33Y53.B2      net (fanout=8)        0.967   Vga_Mod/Syncro/HPOS<9>
+    SLICE_X33Y53.B       Tilo                  0.097   Vga_Mod/Syncro/HPOS<4>
+                                                       Vga_Mod/Syncro/GND_43_o_INV_14_o111
+    SLICE_X34Y57.C5      net (fanout=20)       0.826   Vga_Mod/Syncro/GND_43_o_INV_14_o11
+    SLICE_X34Y57.C       Tilo                  0.097   Vga_Mod/Syncro/r_MemorySyncro_VPOS_4<7>
+                                                       Vga_Mod/Syncro/HPOS[10]_PWR_13_o_LessThan_20_o12
+    SLICE_X36Y55.A4      net (fanout=11)       0.957   Vga_Mod/Syncro/HPOS[10]_PWR_13_o_LessThan_20_o
+    SLICE_X36Y55.A       Tilo                  0.097   Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_A<4>
+                                                       Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_A61
+    SLICE_X34Y55.AX      net (fanout=1)        0.304   Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_A<4>
+    SLICE_X34Y55.COUT    Taxcy                 0.411   Vga_Mod/Syncro/r_MemorySyncro_HPOS_4<7>
+                                                       Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_cy<7>
+    SLICE_X34Y56.CIN     net (fanout=1)        0.000   Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_cy<7>
+    SLICE_X34Y56.CLK     Tcinck                0.086   Vga_Mod/Syncro/r_MemorySyncro_HPOS_4<10>
+                                                       Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_xor<10>
+                                                       Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_10
+    -------------------------------------------------  ---------------------------
+    Total                                      4.183ns (1.129ns logic, 3.054ns route)
+                                                       (27.0% logic, 73.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     20.819ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Vga_Mod/Syncro/HPOS_9 (FF)
+  Destination:          Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_10 (FF)
+  Requirement:          25.000ns
+  Data Path Delay:      4.042ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.057ns (0.563 - 0.620)
+  Source Clock:         r_Clock_40 rising at 0.000ns
+  Destination Clock:    r_Clock_40 rising at 25.000ns
+  Clock Uncertainty:    0.082ns
+
+  Clock Uncertainty:          0.082ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.147ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Vga_Mod/Syncro/HPOS_9 to Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_10
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X33Y54.CQ      Tcko                  0.341   Vga_Mod/Syncro/HPOS<9>
+                                                       Vga_Mod/Syncro/HPOS_9
+    SLICE_X33Y53.B2      net (fanout=8)        0.967   Vga_Mod/Syncro/HPOS<9>
+    SLICE_X33Y53.B       Tilo                  0.097   Vga_Mod/Syncro/HPOS<4>
+                                                       Vga_Mod/Syncro/GND_43_o_INV_14_o111
+    SLICE_X34Y57.C5      net (fanout=20)       0.826   Vga_Mod/Syncro/GND_43_o_INV_14_o11
+    SLICE_X34Y57.C       Tilo                  0.097   Vga_Mod/Syncro/r_MemorySyncro_VPOS_4<7>
+                                                       Vga_Mod/Syncro/HPOS[10]_PWR_13_o_LessThan_20_o12
+    SLICE_X34Y53.C3      net (fanout=11)       0.829   Vga_Mod/Syncro/HPOS[10]_PWR_13_o_LessThan_20_o
+    SLICE_X34Y53.C       Tilo                  0.097   N72
+                                                       Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_A7
+    SLICE_X34Y55.BX      net (fanout=1)        0.316   Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_lut<5>
+    SLICE_X34Y55.COUT    Tbxcy                 0.386   Vga_Mod/Syncro/r_MemorySyncro_HPOS_4<7>
+                                                       Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_cy<7>
+    SLICE_X34Y56.CIN     net (fanout=1)        0.000   Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_cy<7>
+    SLICE_X34Y56.CLK     Tcinck                0.086   Vga_Mod/Syncro/r_MemorySyncro_HPOS_4<10>
+                                                       Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_xor<10>
+                                                       Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_10
+    -------------------------------------------------  ---------------------------
+    Total                                      4.042ns (1.104ns logic, 2.938ns route)
+                                                       (27.3% logic, 72.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     20.888ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Vga_Mod/Syncro/HPOS_7 (FF)
+  Destination:          Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_10 (FF)
+  Requirement:          25.000ns
+  Data Path Delay:      3.973ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.057ns (0.563 - 0.620)
+  Source Clock:         r_Clock_40 rising at 0.000ns
+  Destination Clock:    r_Clock_40 rising at 25.000ns
+  Clock Uncertainty:    0.082ns
+
+  Clock Uncertainty:          0.082ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.147ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Vga_Mod/Syncro/HPOS_7 to Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_10
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X33Y55.DQ      Tcko                  0.341   Vga_Mod/Syncro/HPOS<7>
+                                                       Vga_Mod/Syncro/HPOS_7
+    SLICE_X33Y53.B1      net (fanout=14)       0.757   Vga_Mod/Syncro/HPOS<7>
+    SLICE_X33Y53.B       Tilo                  0.097   Vga_Mod/Syncro/HPOS<4>
+                                                       Vga_Mod/Syncro/GND_43_o_INV_14_o111
+    SLICE_X34Y57.C5      net (fanout=20)       0.826   Vga_Mod/Syncro/GND_43_o_INV_14_o11
+    SLICE_X34Y57.C       Tilo                  0.097   Vga_Mod/Syncro/r_MemorySyncro_VPOS_4<7>
+                                                       Vga_Mod/Syncro/HPOS[10]_PWR_13_o_LessThan_20_o12
+    SLICE_X36Y55.A4      net (fanout=11)       0.957   Vga_Mod/Syncro/HPOS[10]_PWR_13_o_LessThan_20_o
+    SLICE_X36Y55.A       Tilo                  0.097   Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_A<4>
+                                                       Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_A61
+    SLICE_X34Y55.AX      net (fanout=1)        0.304   Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_A<4>
+    SLICE_X34Y55.COUT    Taxcy                 0.411   Vga_Mod/Syncro/r_MemorySyncro_HPOS_4<7>
+                                                       Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_cy<7>
+    SLICE_X34Y56.CIN     net (fanout=1)        0.000   Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_cy<7>
+    SLICE_X34Y56.CLK     Tcinck                0.086   Vga_Mod/Syncro/r_MemorySyncro_HPOS_4<10>
+                                                       Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_xor<10>
+                                                       Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_10
+    -------------------------------------------------  ---------------------------
+    Total                                      3.973ns (1.129ns logic, 2.844ns route)
+                                                       (28.4% logic, 71.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_8 (SLICE_X34Y56.CIN), 299 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     20.701ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Vga_Mod/Syncro/HPOS_9 (FF)
+  Destination:          Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_8 (FF)
+  Requirement:          25.000ns
+  Data Path Delay:      4.160ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.057ns (0.563 - 0.620)
+  Source Clock:         r_Clock_40 rising at 0.000ns
+  Destination Clock:    r_Clock_40 rising at 25.000ns
+  Clock Uncertainty:    0.082ns
+
+  Clock Uncertainty:          0.082ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.147ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Vga_Mod/Syncro/HPOS_9 to Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X33Y54.CQ      Tcko                  0.341   Vga_Mod/Syncro/HPOS<9>
+                                                       Vga_Mod/Syncro/HPOS_9
+    SLICE_X33Y53.B2      net (fanout=8)        0.967   Vga_Mod/Syncro/HPOS<9>
+    SLICE_X33Y53.B       Tilo                  0.097   Vga_Mod/Syncro/HPOS<4>
+                                                       Vga_Mod/Syncro/GND_43_o_INV_14_o111
+    SLICE_X34Y57.C5      net (fanout=20)       0.826   Vga_Mod/Syncro/GND_43_o_INV_14_o11
+    SLICE_X34Y57.C       Tilo                  0.097   Vga_Mod/Syncro/r_MemorySyncro_VPOS_4<7>
+                                                       Vga_Mod/Syncro/HPOS[10]_PWR_13_o_LessThan_20_o12
+    SLICE_X36Y55.A4      net (fanout=11)       0.957   Vga_Mod/Syncro/HPOS[10]_PWR_13_o_LessThan_20_o
+    SLICE_X36Y55.A       Tilo                  0.097   Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_A<4>
+                                                       Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_A61
+    SLICE_X34Y55.AX      net (fanout=1)        0.304   Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_A<4>
+    SLICE_X34Y55.COUT    Taxcy                 0.411   Vga_Mod/Syncro/r_MemorySyncro_HPOS_4<7>
+                                                       Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_cy<7>
+    SLICE_X34Y56.CIN     net (fanout=1)        0.000   Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_cy<7>
+    SLICE_X34Y56.CLK     Tcinck                0.063   Vga_Mod/Syncro/r_MemorySyncro_HPOS_4<10>
+                                                       Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_xor<10>
+                                                       Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_8
+    -------------------------------------------------  ---------------------------
+    Total                                      4.160ns (1.106ns logic, 3.054ns route)
+                                                       (26.6% logic, 73.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     20.842ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Vga_Mod/Syncro/HPOS_9 (FF)
+  Destination:          Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_8 (FF)
+  Requirement:          25.000ns
+  Data Path Delay:      4.019ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.057ns (0.563 - 0.620)
+  Source Clock:         r_Clock_40 rising at 0.000ns
+  Destination Clock:    r_Clock_40 rising at 25.000ns
+  Clock Uncertainty:    0.082ns
+
+  Clock Uncertainty:          0.082ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.147ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Vga_Mod/Syncro/HPOS_9 to Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X33Y54.CQ      Tcko                  0.341   Vga_Mod/Syncro/HPOS<9>
+                                                       Vga_Mod/Syncro/HPOS_9
+    SLICE_X33Y53.B2      net (fanout=8)        0.967   Vga_Mod/Syncro/HPOS<9>
+    SLICE_X33Y53.B       Tilo                  0.097   Vga_Mod/Syncro/HPOS<4>
+                                                       Vga_Mod/Syncro/GND_43_o_INV_14_o111
+    SLICE_X34Y57.C5      net (fanout=20)       0.826   Vga_Mod/Syncro/GND_43_o_INV_14_o11
+    SLICE_X34Y57.C       Tilo                  0.097   Vga_Mod/Syncro/r_MemorySyncro_VPOS_4<7>
+                                                       Vga_Mod/Syncro/HPOS[10]_PWR_13_o_LessThan_20_o12
+    SLICE_X34Y53.C3      net (fanout=11)       0.829   Vga_Mod/Syncro/HPOS[10]_PWR_13_o_LessThan_20_o
+    SLICE_X34Y53.C       Tilo                  0.097   N72
+                                                       Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_A7
+    SLICE_X34Y55.BX      net (fanout=1)        0.316   Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_lut<5>
+    SLICE_X34Y55.COUT    Tbxcy                 0.386   Vga_Mod/Syncro/r_MemorySyncro_HPOS_4<7>
+                                                       Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_cy<7>
+    SLICE_X34Y56.CIN     net (fanout=1)        0.000   Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_cy<7>
+    SLICE_X34Y56.CLK     Tcinck                0.063   Vga_Mod/Syncro/r_MemorySyncro_HPOS_4<10>
+                                                       Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_xor<10>
+                                                       Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_8
+    -------------------------------------------------  ---------------------------
+    Total                                      4.019ns (1.081ns logic, 2.938ns route)
+                                                       (26.9% logic, 73.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     20.911ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Vga_Mod/Syncro/HPOS_7 (FF)
+  Destination:          Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_8 (FF)
+  Requirement:          25.000ns
+  Data Path Delay:      3.950ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.057ns (0.563 - 0.620)
+  Source Clock:         r_Clock_40 rising at 0.000ns
+  Destination Clock:    r_Clock_40 rising at 25.000ns
+  Clock Uncertainty:    0.082ns
+
+  Clock Uncertainty:          0.082ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.147ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: Vga_Mod/Syncro/HPOS_7 to Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X33Y55.DQ      Tcko                  0.341   Vga_Mod/Syncro/HPOS<7>
+                                                       Vga_Mod/Syncro/HPOS_7
+    SLICE_X33Y53.B1      net (fanout=14)       0.757   Vga_Mod/Syncro/HPOS<7>
+    SLICE_X33Y53.B       Tilo                  0.097   Vga_Mod/Syncro/HPOS<4>
+                                                       Vga_Mod/Syncro/GND_43_o_INV_14_o111
+    SLICE_X34Y57.C5      net (fanout=20)       0.826   Vga_Mod/Syncro/GND_43_o_INV_14_o11
+    SLICE_X34Y57.C       Tilo                  0.097   Vga_Mod/Syncro/r_MemorySyncro_VPOS_4<7>
+                                                       Vga_Mod/Syncro/HPOS[10]_PWR_13_o_LessThan_20_o12
+    SLICE_X36Y55.A4      net (fanout=11)       0.957   Vga_Mod/Syncro/HPOS[10]_PWR_13_o_LessThan_20_o
+    SLICE_X36Y55.A       Tilo                  0.097   Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_A<4>
+                                                       Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_A61
+    SLICE_X34Y55.AX      net (fanout=1)        0.304   Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_A<4>
+    SLICE_X34Y55.COUT    Taxcy                 0.411   Vga_Mod/Syncro/r_MemorySyncro_HPOS_4<7>
+                                                       Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_cy<7>
+    SLICE_X34Y56.CIN     net (fanout=1)        0.000   Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_cy<7>
+    SLICE_X34Y56.CLK     Tcinck                0.063   Vga_Mod/Syncro/r_MemorySyncro_HPOS_4<10>
+                                                       Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_xor<10>
+                                                       Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_8
+    -------------------------------------------------  ---------------------------
+    Total                                      3.950ns (1.106ns logic, 2.844ns route)
+                                                       (28.0% logic, 72.0% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_CR_clkout1 = PERIOD TIMEGRP "CR_clkout1" TS_sys_clk_pin * 0.32 HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T (RAMB36_X1Y10.ADDRBWRADDRL11), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.006ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Vga_Mod/Draw/r_Vram_Address_Dealer_11 (FF)
+  Destination:          Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.306ns (Levels of Logic = 0)
+  Clock Path Skew:      0.300ns (0.864 - 0.564)
+  Source Clock:         r_Clock_40 rising at 25.000ns
+  Destination Clock:    r_Clock_40 rising at 25.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: Vga_Mod/Draw/r_Vram_Address_Dealer_11 to Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T
+    Location                    Delay type         Delay(ns)  Physical Resource
+                                                              Logical Resource(s)
+    --------------------------------------------------------  -------------------
+    SLICE_X29Y45.DQ             Tcko                  0.141   Vga_Mod/Draw/r_Vram_Address_Dealer<11>
+                                                              Vga_Mod/Draw/r_Vram_Address_Dealer_11
+    RAMB36_X1Y10.ADDRBWRADDRL11 net (fanout=12)       0.348   Vga_Mod/Draw/r_Vram_Address_Dealer<11>
+    RAMB36_X1Y10.CLKBWRCLKL     Trckc_ADDRB (-Th)     0.183   Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T
+                                                              Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T
+    --------------------------------------------------------  ---------------------------
+    Total                                             0.306ns (-0.042ns logic, 0.348ns route)
+                                                              (-13.7% logic, 113.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T (RAMB36_X1Y10.ADDRBWRADDRU11), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.006ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Vga_Mod/Draw/r_Vram_Address_Dealer_11 (FF)
+  Destination:          Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.306ns (Levels of Logic = 0)
+  Clock Path Skew:      0.300ns (0.864 - 0.564)
+  Source Clock:         r_Clock_40 rising at 25.000ns
+  Destination Clock:    r_Clock_40 rising at 25.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: Vga_Mod/Draw/r_Vram_Address_Dealer_11 to Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T
+    Location                    Delay type         Delay(ns)  Physical Resource
+                                                              Logical Resource(s)
+    --------------------------------------------------------  -------------------
+    SLICE_X29Y45.DQ             Tcko                  0.141   Vga_Mod/Draw/r_Vram_Address_Dealer<11>
+                                                              Vga_Mod/Draw/r_Vram_Address_Dealer_11
+    RAMB36_X1Y10.ADDRBWRADDRU11 net (fanout=12)       0.348   Vga_Mod/Draw/r_Vram_Address_Dealer<11>
+    RAMB36_X1Y10.CLKBWRCLKU     Trckc_ADDRB (-Th)     0.183   Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T
+                                                              Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T
+    --------------------------------------------------------  ---------------------------
+    Total                                             0.306ns (-0.042ns logic, 0.348ns route)
+                                                              (-13.7% logic, 113.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Vga_Mod/Draw/r_Vram_Address_1_7 (SLICE_X27Y50.DX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.008ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Vga_Mod/Draw/r_Vram_Counter_1_7 (FF)
+  Destination:          Vga_Mod/Draw/r_Vram_Address_1_7 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.271ns (Levels of Logic = 0)
+  Clock Path Skew:      0.263ns (0.828 - 0.565)
+  Source Clock:         r_Clock_40 rising at 25.000ns
+  Destination Clock:    r_Clock_40 rising at 25.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: Vga_Mod/Draw/r_Vram_Counter_1_7 to Vga_Mod/Draw/r_Vram_Address_1_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X26Y49.DQ      Tcko                  0.141   Vga_Mod/Draw/r_Vram_Counter_1<7>
+                                                       Vga_Mod/Draw/r_Vram_Counter_1_7
+    SLICE_X27Y50.DX      net (fanout=3)        0.202   Vga_Mod/Draw/r_Vram_Counter_1<7>
+    SLICE_X27Y50.CLK     Tckdi       (-Th)     0.072   Vga_Mod/Draw/r_Vram_Address_1<7>
+                                                       Vga_Mod/Draw/r_Vram_Address_1_7
+    -------------------------------------------------  ---------------------------
+    Total                                      0.271ns (0.069ns logic, 0.202ns route)
+                                                       (25.5% logic, 74.5% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_CR_clkout1 = PERIOD TIMEGRP "CR_clkout1" TS_sys_clk_pin * 0.32 HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 22.859ns (period - min period limit)
+  Period: 25.000ns
+  Min period limit: 2.141ns (467.071MHz) (Trper_CLKB)
+  Physical resource: Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B/CLKBWRCLKL
+  Logical resource: Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B/CLKBWRCLKL
+  Location pin: RAMB36_X1Y7.CLKBWRCLKL
+  Clock network: r_Clock_40
+--------------------------------------------------------------------------------
+Slack: 22.859ns (period - min period limit)
+  Period: 25.000ns
+  Min period limit: 2.141ns (467.071MHz) (Trper_CLK_WF_NC(FMAX_CAS_WF_NC))
+  Physical resource: Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B/CLKBWRCLKU
+  Logical resource: Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B/CLKBWRCLKU
+  Location pin: RAMB36_X1Y7.CLKBWRCLKU
+  Clock network: r_Clock_40
+--------------------------------------------------------------------------------
+Slack: 22.859ns (period - min period limit)
+  Period: 25.000ns
+  Min period limit: 2.141ns (467.071MHz) (Trper_CLKB)
+  Physical resource: Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T/CLKBWRCLKL
+  Logical resource: Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T/CLKBWRCLKL
+  Location pin: RAMB36_X1Y14.CLKBWRCLKL
+  Clock network: r_Clock_40
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for TS_sys_clk_pin
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_sys_clk_pin                 |      8.000ns|      4.000ns|      4.582ns|            0|            0|            0|        23357|
+| TS_CR_clkout0                 |      8.000ns|      4.582ns|          N/A|            0|            0|        17873|            0|
+| TS_CR_clkout1                 |     25.000ns|      4.365ns|          N/A|            0|            0|         5484|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock i_Master_Clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+i_Master_Clk   |    4.582|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 23357 paths, 0 nets, and 5480 connections
+
+Design statistics:
+   Minimum period:   4.582ns{1}   (Maximum frequency: 218.245MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Tue May 31 14:12:05 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 631 MB
+
+
+

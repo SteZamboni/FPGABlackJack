@@ -1,0 +1,1258 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue May 31 14:10:05 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "o_Master_G<5>" LOCATE = SITE "F20" LEVEL 1;
+COMP "o_Master_G<2>" LOCATE = SITE "L19" LEVEL 1;
+COMP "o_Master_G<1>" LOCATE = SITE "N20" LEVEL 1;
+COMP "o_Master_G<4>" LOCATE = SITE "H20" LEVEL 1;
+COMP "o_Master_G<3>" LOCATE = SITE "J19" LEVEL 1;
+COMP "o_Master_HSync" LOCATE = SITE "P19" LEVEL 1;
+COMP "o_Master_G<0>" LOCATE = SITE "H18" LEVEL 1;
+COMP "i_Master_Clk" LOCATE = SITE "L16" LEVEL 1;
+COMP "o_Master_Led<0>" LOCATE = SITE "M14" LEVEL 1;
+COMP "i_Master_On" LOCATE = SITE "G15" LEVEL 1;
+COMP "i_Master_Switch_Combo_1" LOCATE = SITE "T16" LEVEL 1;
+COMP "i_Master_Switch_Combo_2" LOCATE = SITE "W13" LEVEL 1;
+COMP "i_Master_Switch_2" LOCATE = SITE "P15" LEVEL 1;
+COMP "o_Master_R<2>" LOCATE = SITE "J20" LEVEL 1;
+COMP "o_Master_R<1>" LOCATE = SITE "L20" LEVEL 1;
+COMP "o_Master_R<4>" LOCATE = SITE "F19" LEVEL 1;
+COMP "o_Master_R<3>" LOCATE = SITE "G20" LEVEL 1;
+COMP "o_Master_R<0>" LOCATE = SITE "M19" LEVEL 1;
+COMP "o_Master_VSync" LOCATE = SITE "R19" LEVEL 1;
+COMP "o_Master_B<2>" LOCATE = SITE "K19" LEVEL 1;
+COMP "o_Master_B<1>" LOCATE = SITE "M20" LEVEL 1;
+COMP "o_Master_B<4>" LOCATE = SITE "G19" LEVEL 1;
+COMP "o_Master_B<3>" LOCATE = SITE "J18" LEVEL 1;
+COMP "o_Master_B<0>" LOCATE = SITE "P20" LEVEL 1;
+COMP "i_Master_Btn_1" LOCATE = SITE "R18" LEVEL 1;
+COMP "i_Master_Btn_2" LOCATE = SITE "P16" LEVEL 1;
+PIN
+        Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<67>
+        = BEL
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B"
+        PINNAME CLKBWRCLKU;
+PIN
+        Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<66>
+        = BEL
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B"
+        PINNAME CLKBWRCLKL;
+PIN
+        Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<67>
+        = BEL
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T"
+        PINNAME CLKBWRCLKU;
+PIN
+        Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<66>
+        = BEL
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T"
+        PINNAME CLKBWRCLKL;
+PIN
+        Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<67>
+        = BEL
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B"
+        PINNAME CLKBWRCLKU;
+PIN
+        Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<66>
+        = BEL
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B"
+        PINNAME CLKBWRCLKL;
+PIN
+        Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<67>
+        = BEL
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T"
+        PINNAME CLKBWRCLKU;
+PIN
+        Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<66>
+        = BEL
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T"
+        PINNAME CLKBWRCLKL;
+PIN
+        Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<67>
+        = BEL
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B"
+        PINNAME CLKBWRCLKU;
+PIN
+        Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<66>
+        = BEL
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B"
+        PINNAME CLKBWRCLKL;
+PIN
+        Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<67>
+        = BEL
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T"
+        PINNAME CLKBWRCLKU;
+PIN
+        Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<66>
+        = BEL
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T"
+        PINNAME CLKBWRCLKL;
+PIN
+        Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<67>
+        = BEL
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B"
+        PINNAME CLKBWRCLKU;
+PIN
+        Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<66>
+        = BEL
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B"
+        PINNAME CLKBWRCLKL;
+PIN
+        Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<67>
+        = BEL
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T"
+        PINNAME CLKBWRCLKU;
+PIN
+        Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<66>
+        = BEL
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T"
+        PINNAME CLKBWRCLKL;
+PIN
+        Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<67>
+        = BEL
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B"
+        PINNAME CLKBWRCLKU;
+PIN
+        Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<66>
+        = BEL
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B"
+        PINNAME CLKBWRCLKL;
+PIN
+        Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<67>
+        = BEL
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T"
+        PINNAME CLKBWRCLKU;
+PIN
+        Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<66>
+        = BEL
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T"
+        PINNAME CLKBWRCLKL;
+PIN
+        Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<67>
+        = BEL
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B"
+        PINNAME CLKBWRCLKU;
+PIN
+        Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<66>
+        = BEL
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B"
+        PINNAME CLKBWRCLKL;
+PIN
+        Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<67>
+        = BEL
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T"
+        PINNAME CLKBWRCLKU;
+PIN
+        Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<66>
+        = BEL
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T"
+        PINNAME CLKBWRCLKL;
+PIN
+        Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<67>
+        = BEL
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B"
+        PINNAME CLKBWRCLKU;
+PIN
+        Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<66>
+        = BEL
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B"
+        PINNAME CLKBWRCLKL;
+PIN
+        Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<67>
+        = BEL
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T"
+        PINNAME CLKBWRCLKU;
+PIN
+        Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<66>
+        = BEL
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T"
+        PINNAME CLKBWRCLKL;
+PIN
+        Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<67>
+        = BEL
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B"
+        PINNAME CLKBWRCLKU;
+PIN
+        Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<66>
+        = BEL
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B"
+        PINNAME CLKBWRCLKL;
+PIN
+        Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<67>
+        = BEL
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T"
+        PINNAME CLKBWRCLKU;
+PIN
+        Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<66>
+        = BEL
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T"
+        PINNAME CLKBWRCLKL;
+PIN
+        Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<67>
+        = BEL
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B"
+        PINNAME CLKBWRCLKU;
+PIN
+        Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<66>
+        = BEL
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B"
+        PINNAME CLKBWRCLKL;
+PIN
+        Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<67>
+        = BEL
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T"
+        PINNAME CLKBWRCLKU;
+PIN
+        Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<66>
+        = BEL
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T"
+        PINNAME CLKBWRCLKL;
+TIMEGRP CR_clkout1 = BEL "CR/clkout2_buf" BEL
+        "Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_10" BEL
+        "Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_9" BEL
+        "Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_8" BEL
+        "Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_7" BEL
+        "Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_6" BEL
+        "Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_5" BEL
+        "Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_4" BEL
+        "Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_3" BEL
+        "Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_2" BEL
+        "Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_1" BEL
+        "Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_0" BEL
+        "Vga_Mod/Syncro/r_MemorySyncro_VPOS_4_9" BEL
+        "Vga_Mod/Syncro/r_MemorySyncro_VPOS_4_8" BEL
+        "Vga_Mod/Syncro/r_MemorySyncro_VPOS_4_7" BEL
+        "Vga_Mod/Syncro/r_MemorySyncro_VPOS_4_6" BEL
+        "Vga_Mod/Syncro/r_MemorySyncro_VPOS_4_5" BEL
+        "Vga_Mod/Syncro/r_MemorySyncro_VPOS_4_4" BEL
+        "Vga_Mod/Syncro/r_MemorySyncro_VPOS_4_3" BEL
+        "Vga_Mod/Syncro/r_MemorySyncro_VPOS_4_2" BEL
+        "Vga_Mod/Syncro/r_MemorySyncro_VPOS_4_1" BEL
+        "Vga_Mod/Syncro/r_MemorySyncro_VPOS_4_0" BEL "Vga_Mod/Syncro/VPOS_9"
+        BEL "Vga_Mod/Syncro/VPOS_8" BEL "Vga_Mod/Syncro/VPOS_7" BEL
+        "Vga_Mod/Syncro/VPOS_6" BEL "Vga_Mod/Syncro/VPOS_5" BEL
+        "Vga_Mod/Syncro/VPOS_4" BEL "Vga_Mod/Syncro/VPOS_3" BEL
+        "Vga_Mod/Syncro/VPOS_2" BEL "Vga_Mod/Syncro/VPOS_1" BEL
+        "Vga_Mod/Syncro/VPOS_0" BEL "Vga_Mod/Syncro/HPOS_10" BEL
+        "Vga_Mod/Syncro/HPOS_9" BEL "Vga_Mod/Syncro/HPOS_8" BEL
+        "Vga_Mod/Syncro/HPOS_7" BEL "Vga_Mod/Syncro/HPOS_6" BEL
+        "Vga_Mod/Syncro/HPOS_5" BEL "Vga_Mod/Syncro/HPOS_4" BEL
+        "Vga_Mod/Syncro/HPOS_3" BEL "Vga_Mod/Syncro/HPOS_2" BEL
+        "Vga_Mod/Syncro/HPOS_1" BEL "Vga_Mod/Syncro/HPOS_0" BEL
+        "Vga_Mod/Syncro/o_Sync_ActiveVRam_2" BEL
+        "Vga_Mod/Syncro/o_Sync_ActiveVRam_1" BEL "Vga_Mod/Syncro/r_V_Sync" BEL
+        "Vga_Mod/Syncro/r_H_Sync" BEL "Vga_Mod/Syncro/r_VideoOn" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_1_0" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_Dealer_0" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_2_0" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_1_14" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_1_13" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_1_15" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_1_12" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_1_11" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_1_10" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_1_9" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_1_8" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_1_7" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_1_6" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_1_5" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_1_4" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_1_3" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_1_2" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_1_1" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_Dealer_15" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_Dealer_14" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_Dealer_13" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_Dealer_12" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_Dealer_11" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_Dealer_10" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_Dealer_9" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_Dealer_8" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_Dealer_7" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_Dealer_6" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_Dealer_5" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_Dealer_4" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_Dealer_3" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_Dealer_1" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_Dealer_2" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_2_15" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_2_14" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_2_13" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_2_12" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_2_11" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_2_10" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_2_9" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_2_8" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_2_7" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_2_6" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_2_5" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_2_3" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_2_2" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_2_4" BEL
+        "Vga_Mod/Draw/r_Vram_Counter_2_1" BEL "Vga_Mod/Draw/o_Draw_RGB_2" BEL
+        "Vga_Mod/Draw/o_Draw_RGB_1" BEL "Vga_Mod/Draw/o_Draw_RGB_0" BEL
+        "Vga_Mod/Draw/r_Vram_Address_2_15" BEL
+        "Vga_Mod/Draw/r_Vram_Address_2_14" BEL
+        "Vga_Mod/Draw/r_Vram_Address_2_13" BEL
+        "Vga_Mod/Draw/r_Vram_Address_2_12" BEL
+        "Vga_Mod/Draw/r_Vram_Address_2_11" BEL
+        "Vga_Mod/Draw/r_Vram_Address_2_10" BEL
+        "Vga_Mod/Draw/r_Vram_Address_2_9" BEL
+        "Vga_Mod/Draw/r_Vram_Address_2_8" BEL
+        "Vga_Mod/Draw/r_Vram_Address_2_7" BEL
+        "Vga_Mod/Draw/r_Vram_Address_2_6" BEL
+        "Vga_Mod/Draw/r_Vram_Address_2_5" BEL
+        "Vga_Mod/Draw/r_Vram_Address_2_4" BEL
+        "Vga_Mod/Draw/r_Vram_Address_2_3" BEL
+        "Vga_Mod/Draw/r_Vram_Address_2_2" BEL
+        "Vga_Mod/Draw/r_Vram_Address_2_1" BEL
+        "Vga_Mod/Draw/r_Vram_Address_2_0" BEL
+        "Vga_Mod/Draw/r_Vram_Address_1_15" BEL
+        "Vga_Mod/Draw/r_Vram_Address_1_14" BEL
+        "Vga_Mod/Draw/r_Vram_Address_1_13" BEL
+        "Vga_Mod/Draw/r_Vram_Address_1_12" BEL
+        "Vga_Mod/Draw/r_Vram_Address_1_11" BEL
+        "Vga_Mod/Draw/r_Vram_Address_1_10" BEL
+        "Vga_Mod/Draw/r_Vram_Address_1_9" BEL
+        "Vga_Mod/Draw/r_Vram_Address_1_8" BEL
+        "Vga_Mod/Draw/r_Vram_Address_1_7" BEL
+        "Vga_Mod/Draw/r_Vram_Address_1_6" BEL
+        "Vga_Mod/Draw/r_Vram_Address_1_5" BEL
+        "Vga_Mod/Draw/r_Vram_Address_1_4" BEL
+        "Vga_Mod/Draw/r_Vram_Address_1_3" BEL
+        "Vga_Mod/Draw/r_Vram_Address_1_2" BEL
+        "Vga_Mod/Draw/r_Vram_Address_1_1" BEL
+        "Vga_Mod/Draw/r_Vram_Address_1_0" BEL
+        "Vga_Mod/Draw/r_Vram_Address_Dealer_15" BEL
+        "Vga_Mod/Draw/r_Vram_Address_Dealer_14" BEL
+        "Vga_Mod/Draw/r_Vram_Address_Dealer_13" BEL
+        "Vga_Mod/Draw/r_Vram_Address_Dealer_12" BEL
+        "Vga_Mod/Draw/r_Vram_Address_Dealer_11" BEL
+        "Vga_Mod/Draw/r_Vram_Address_Dealer_10" BEL
+        "Vga_Mod/Draw/r_Vram_Address_Dealer_9" BEL
+        "Vga_Mod/Draw/r_Vram_Address_Dealer_8" BEL
+        "Vga_Mod/Draw/r_Vram_Address_Dealer_7" BEL
+        "Vga_Mod/Draw/r_Vram_Address_Dealer_6" BEL
+        "Vga_Mod/Draw/r_Vram_Address_Dealer_5" BEL
+        "Vga_Mod/Draw/r_Vram_Address_Dealer_4" BEL
+        "Vga_Mod/Draw/r_Vram_Address_Dealer_3" BEL
+        "Vga_Mod/Draw/r_Vram_Address_Dealer_2" BEL
+        "Vga_Mod/Draw/r_Vram_Address_Dealer_1" BEL
+        "Vga_Mod/Draw/r_Vram_Address_Dealer_0" BEL
+        "Vga_Mod/Syncro/o_Sync_ActiveVRam_0" PIN
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<67>"
+        PIN
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<66>"
+        PIN
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<67>"
+        PIN
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<66>"
+        PIN
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<67>"
+        PIN
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<66>"
+        PIN
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<67>"
+        PIN
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<66>"
+        PIN
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<67>"
+        PIN
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<66>"
+        PIN
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<67>"
+        PIN
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<66>"
+        PIN
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<67>"
+        PIN
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<66>"
+        PIN
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<67>"
+        PIN
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<66>"
+        PIN
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<67>"
+        PIN
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<66>"
+        PIN
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<67>"
+        PIN
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<66>"
+        PIN
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<67>"
+        PIN
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<66>"
+        PIN
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<67>"
+        PIN
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<66>"
+        PIN
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<67>"
+        PIN
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<66>"
+        PIN
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<67>"
+        PIN
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<66>"
+        PIN
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<67>"
+        PIN
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<66>"
+        PIN
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<67>"
+        PIN
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<66>"
+        PIN
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<67>"
+        PIN
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<66>"
+        PIN
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<67>"
+        PIN
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<66>";
+PIN
+        Players_Mod/CG/Seed_Rom/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM18.ram_pins<32>
+        = BEL
+        "Players_Mod/CG/Seed_Rom/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM18.ram"
+        PINNAME CLKARDCLK;
+PIN
+        Players_Mod/CG/Seed_Rom/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM18.ram_pins<33>
+        = BEL
+        "Players_Mod/CG/Seed_Rom/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM18.ram"
+        PINNAME CLKBWRCLK;
+PIN
+        Players_Mod/CB/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_pins<63>
+        = BEL
+        "Players_Mod/CB/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram"
+        PINNAME CLKARDCLKU;
+PIN
+        Players_Mod/CB/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_pins<62>
+        = BEL
+        "Players_Mod/CB/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram"
+        PINNAME CLKARDCLKL;
+PIN
+        Players_Mod/CB/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_pins<65>
+        = BEL
+        "Players_Mod/CB/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram"
+        PINNAME CLKBWRCLKU;
+PIN
+        Players_Mod/CB/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_pins<64>
+        = BEL
+        "Players_Mod/CB/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram"
+        PINNAME CLKBWRCLKL;
+PIN
+        Players_Mod/CG/Num_Rom/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_pins<63>
+        = BEL
+        "Players_Mod/CG/Num_Rom/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram"
+        PINNAME CLKARDCLKU;
+PIN
+        Players_Mod/CG/Num_Rom/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_pins<62>
+        = BEL
+        "Players_Mod/CG/Num_Rom/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram"
+        PINNAME CLKARDCLKL;
+PIN
+        Players_Mod/CG/Num_Rom/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_pins<65>
+        = BEL
+        "Players_Mod/CG/Num_Rom/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram"
+        PINNAME CLKBWRCLKU;
+PIN
+        Players_Mod/CG/Num_Rom/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_pins<64>
+        = BEL
+        "Players_Mod/CG/Num_Rom/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram"
+        PINNAME CLKBWRCLKL;
+PIN
+        Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<65>
+        = BEL
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B"
+        PINNAME CLKARDCLKU;
+PIN
+        Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<64>
+        = BEL
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B"
+        PINNAME CLKARDCLKL;
+PIN
+        Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<65>
+        = BEL
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T"
+        PINNAME CLKARDCLKU;
+PIN
+        Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<64>
+        = BEL
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T"
+        PINNAME CLKARDCLKL;
+PIN
+        Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<65>
+        = BEL
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B"
+        PINNAME CLKARDCLKU;
+PIN
+        Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<64>
+        = BEL
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B"
+        PINNAME CLKARDCLKL;
+PIN
+        Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<65>
+        = BEL
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T"
+        PINNAME CLKARDCLKU;
+PIN
+        Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<64>
+        = BEL
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T"
+        PINNAME CLKARDCLKL;
+PIN
+        Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<65>
+        = BEL
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B"
+        PINNAME CLKARDCLKU;
+PIN
+        Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<64>
+        = BEL
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B"
+        PINNAME CLKARDCLKL;
+PIN
+        Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<65>
+        = BEL
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T"
+        PINNAME CLKARDCLKU;
+PIN
+        Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<64>
+        = BEL
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T"
+        PINNAME CLKARDCLKL;
+PIN
+        Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<65>
+        = BEL
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B"
+        PINNAME CLKARDCLKU;
+PIN
+        Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<64>
+        = BEL
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B"
+        PINNAME CLKARDCLKL;
+PIN
+        Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<65>
+        = BEL
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T"
+        PINNAME CLKARDCLKU;
+PIN
+        Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<64>
+        = BEL
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T"
+        PINNAME CLKARDCLKL;
+PIN
+        Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<65>
+        = BEL
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B"
+        PINNAME CLKARDCLKU;
+PIN
+        Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<64>
+        = BEL
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B"
+        PINNAME CLKARDCLKL;
+PIN
+        Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<65>
+        = BEL
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T"
+        PINNAME CLKARDCLKU;
+PIN
+        Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<64>
+        = BEL
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T"
+        PINNAME CLKARDCLKL;
+PIN
+        Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<65>
+        = BEL
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B"
+        PINNAME CLKARDCLKU;
+PIN
+        Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<64>
+        = BEL
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B"
+        PINNAME CLKARDCLKL;
+PIN
+        Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<65>
+        = BEL
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T"
+        PINNAME CLKARDCLKU;
+PIN
+        Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<64>
+        = BEL
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T"
+        PINNAME CLKARDCLKL;
+PIN
+        Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<65>
+        = BEL
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B"
+        PINNAME CLKARDCLKU;
+PIN
+        Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<64>
+        = BEL
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B"
+        PINNAME CLKARDCLKL;
+PIN
+        Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<65>
+        = BEL
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T"
+        PINNAME CLKARDCLKU;
+PIN
+        Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<64>
+        = BEL
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T"
+        PINNAME CLKARDCLKL;
+PIN
+        Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<65>
+        = BEL
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B"
+        PINNAME CLKARDCLKU;
+PIN
+        Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<64>
+        = BEL
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B"
+        PINNAME CLKARDCLKL;
+PIN
+        Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<65>
+        = BEL
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T"
+        PINNAME CLKARDCLKU;
+PIN
+        Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<64>
+        = BEL
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T"
+        PINNAME CLKARDCLKL;
+PIN
+        Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<65>
+        = BEL
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B"
+        PINNAME CLKARDCLKU;
+PIN
+        Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<64>
+        = BEL
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B"
+        PINNAME CLKARDCLKL;
+PIN
+        Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<65>
+        = BEL
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T"
+        PINNAME CLKARDCLKU;
+PIN
+        Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<64>
+        = BEL
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T"
+        PINNAME CLKARDCLKL;
+TIMEGRP CR_clkout0 = BEL "CR/clkout1_buf" BEL "Deb_Mod_2/r_Count_20" BEL
+        "Deb_Mod_2/r_Count_19" BEL "Deb_Mod_2/r_Count_18" BEL
+        "Deb_Mod_2/r_Count_17" BEL "Deb_Mod_2/r_Count_16" BEL
+        "Deb_Mod_2/r_Count_15" BEL "Deb_Mod_2/r_Count_14" BEL
+        "Deb_Mod_2/r_Count_13" BEL "Deb_Mod_2/r_Count_12" BEL
+        "Deb_Mod_2/r_Count_11" BEL "Deb_Mod_2/r_Count_10" BEL
+        "Deb_Mod_2/r_Count_9" BEL "Deb_Mod_2/r_Count_8" BEL
+        "Deb_Mod_2/r_Count_7" BEL "Deb_Mod_2/r_Count_6" BEL
+        "Deb_Mod_2/r_Count_5" BEL "Deb_Mod_2/r_Count_4" BEL
+        "Deb_Mod_2/r_Count_3" BEL "Deb_Mod_2/r_Count_2" BEL
+        "Deb_Mod_2/r_Count_1" BEL "Deb_Mod_2/r_Count_0" BEL
+        "Deb_Mod/r_Count_20" BEL "Deb_Mod/r_Count_19" BEL "Deb_Mod/r_Count_18"
+        BEL "Deb_Mod/r_Count_17" BEL "Deb_Mod/r_Count_16" BEL
+        "Deb_Mod/r_Count_15" BEL "Deb_Mod/r_Count_14" BEL "Deb_Mod/r_Count_13"
+        BEL "Deb_Mod/r_Count_12" BEL "Deb_Mod/r_Count_11" BEL
+        "Deb_Mod/r_Count_10" BEL "Deb_Mod/r_Count_9" BEL "Deb_Mod/r_Count_8"
+        BEL "Deb_Mod/r_Count_7" BEL "Deb_Mod/r_Count_6" BEL
+        "Deb_Mod/r_Count_5" BEL "Deb_Mod/r_Count_4" BEL "Deb_Mod/r_Count_3"
+        BEL "Deb_Mod/r_Count_2" BEL "Deb_Mod/r_Count_1" BEL
+        "Deb_Mod/r_Count_0" BEL "Players_Mod/P1/r_Number_Card_2" BEL
+        "Players_Mod/P1/r_Number_Card_1" BEL "Players_Mod/P1/r_Number_Card_0"
+        BEL "Players_Mod/P1/r_Number_1" BEL "Players_Mod/P1/r_Number_0" BEL
+        "Players_Mod/P2/r_Number_1" BEL "Players_Mod/P2/r_Number_0" BEL
+        "Players_Mod/P2/r_Number_Card_2" BEL "Players_Mod/P2/r_Number_Card_1"
+        BEL "Players_Mod/P2/r_Number_Card_0" BEL
+        "Players_Mod/P1/r_Card_Received_0" BEL
+        "Players_Mod/P1/r_Card_Received_1" BEL
+        "Players_Mod/P1/r_Card_Received_2" BEL
+        "Players_Mod/P1/r_Card_Received_3" BEL
+        "Players_Mod/P1/r_Card_Received_4" BEL
+        "Players_Mod/P1/r_Card_Received_5" BEL
+        "Players_Mod/P1/r_Memory_Card_2_0" BEL
+        "Players_Mod/P1/r_Memory_Card_2_1" BEL
+        "Players_Mod/P1/r_Memory_Card_2_2" BEL
+        "Players_Mod/P1/r_Memory_Card_2_3" BEL
+        "Players_Mod/P1/r_Memory_Card_2_4" BEL
+        "Players_Mod/P1/r_Memory_Card_2_5" BEL
+        "Players_Mod/P1/r_Memory_Card_0_0" BEL
+        "Players_Mod/P1/r_Memory_Card_0_1" BEL
+        "Players_Mod/P1/r_Memory_Card_0_2" BEL
+        "Players_Mod/P1/r_Memory_Card_0_3" BEL
+        "Players_Mod/P1/r_Memory_Card_0_4" BEL
+        "Players_Mod/P1/r_Memory_Card_0_5" BEL
+        "Players_Mod/P1/r_Memory_Card_1_0" BEL
+        "Players_Mod/P1/r_Memory_Card_1_1" BEL
+        "Players_Mod/P1/r_Memory_Card_1_2" BEL
+        "Players_Mod/P1/r_Memory_Card_1_3" BEL
+        "Players_Mod/P1/r_Memory_Card_1_4" BEL
+        "Players_Mod/P1/r_Memory_Card_1_5" BEL
+        "Players_Mod/P1/r_Memory_Card_3_0" BEL
+        "Players_Mod/P1/r_Memory_Card_3_1" BEL
+        "Players_Mod/P1/r_Memory_Card_3_2" BEL
+        "Players_Mod/P1/r_Memory_Card_3_3" BEL
+        "Players_Mod/P1/r_Memory_Card_3_4" BEL
+        "Players_Mod/P1/r_Memory_Card_3_5" BEL "Players_Mod/P1/r_Offset_Y_3"
+        BEL "Players_Mod/P1/r_Offset_Y_7" BEL "Players_Mod/P1/r_Offset_X_3"
+        BEL "Players_Mod/P1/r_Offset_X_6" BEL "Players_Mod/P1/r_Offset_X_7"
+        BEL "Players_Mod/P1/r_Player_CG_Card_0" BEL
+        "Players_Mod/P1/r_Player_CG_Card_1" BEL
+        "Players_Mod/P1/r_Player_CG_Card_2" BEL
+        "Players_Mod/P1/r_Player_CG_Card_3" BEL
+        "Players_Mod/P1/r_Player_CG_Card_4" BEL
+        "Players_Mod/P1/r_Player_CG_Card_5" BEL
+        "Players_Mod/P1/r_Player_VRam_Data_0" BEL
+        "Players_Mod/P1/r_Player_VRam_Data_1" BEL
+        "Players_Mod/P1/r_Player_VRam_Data_2" BEL
+        "Players_Mod/P1/r_CBR_Counter_0" BEL "Players_Mod/P1/r_CBR_Counter_1"
+        BEL "Players_Mod/P1/r_CBR_Counter_2" BEL
+        "Players_Mod/P1/r_CBR_Counter_3" BEL "Players_Mod/P1/r_CBR_Counter_4"
+        BEL "Players_Mod/P1/r_CBR_Counter_5" BEL
+        "Players_Mod/P1/r_CBR_Counter_6" BEL "Players_Mod/P1/r_CBR_Counter_7"
+        BEL "Players_Mod/P1/r_CBR_Counter_8" BEL
+        "Players_Mod/P1/r_CBR_Counter_9" BEL "Players_Mod/P1/r_CBR_Counter_10"
+        BEL "Players_Mod/P1/r_CBR_Counter_11" BEL
+        "Players_Mod/P1/r_CBR_Counter_12" BEL "Players_Mod/P1/r_HPOS_0" BEL
+        "Players_Mod/P1/r_HPOS_1" BEL "Players_Mod/P1/r_HPOS_2" BEL
+        "Players_Mod/P1/r_HPOS_3" BEL "Players_Mod/P1/r_HPOS_4" BEL
+        "Players_Mod/P1/r_HPOS_5" BEL "Players_Mod/P1/r_HPOS_6" BEL
+        "Players_Mod/P1/r_Player_CBR_Address_0" BEL
+        "Players_Mod/P1/r_Player_CBR_Address_1" BEL
+        "Players_Mod/P1/r_Player_CBR_Address_2" BEL
+        "Players_Mod/P1/r_Player_CBR_Address_3" BEL
+        "Players_Mod/P1/r_Player_CBR_Address_4" BEL
+        "Players_Mod/P1/r_Player_CBR_Address_5" BEL
+        "Players_Mod/P1/r_Player_CBR_Address_6" BEL
+        "Players_Mod/P1/r_Player_CBR_Address_7" BEL
+        "Players_Mod/P1/r_Player_CBR_Address_8" BEL
+        "Players_Mod/P1/r_Player_CBR_Address_9" BEL
+        "Players_Mod/P1/r_Player_CBR_Address_10" BEL
+        "Players_Mod/P1/r_Player_CBR_Address_11" BEL
+        "Players_Mod/P1/r_Player_CBR_Address_12" BEL "Players_Mod/P1/r_VPOS_0"
+        BEL "Players_Mod/P1/r_VPOS_1" BEL "Players_Mod/P1/r_VPOS_2" BEL
+        "Players_Mod/P1/r_VPOS_3" BEL "Players_Mod/P1/r_VPOS_4" BEL
+        "Players_Mod/P1/r_VPOS_5" BEL "Players_Mod/P1/r_VPOS_6" BEL
+        "Players_Mod/P1/r_Player_VRam_Address_0" BEL
+        "Players_Mod/P1/r_Player_VRam_Address_1" BEL
+        "Players_Mod/P1/r_Player_VRam_Address_2" BEL
+        "Players_Mod/P1/r_Player_VRam_Address_3" BEL
+        "Players_Mod/P1/r_Player_VRam_Address_4" BEL
+        "Players_Mod/P1/r_Player_VRam_Address_5" BEL
+        "Players_Mod/P1/r_Player_VRam_Address_6" BEL
+        "Players_Mod/P1/r_Player_VRam_Address_7" BEL
+        "Players_Mod/P1/r_Player_VRam_Address_8" BEL
+        "Players_Mod/P1/r_Player_VRam_Address_9" BEL
+        "Players_Mod/P1/r_Player_VRam_Address_10" BEL
+        "Players_Mod/P1/r_Player_VRam_Address_11" BEL
+        "Players_Mod/P1/r_Player_VRam_Address_12" BEL
+        "Players_Mod/P1/r_Player_VRam_Address_13" BEL
+        "Players_Mod/P1/r_Player_VRam_Address_14" BEL
+        "Players_Mod/P1/r_Player_VRam_Address_15" BEL
+        "Players_Mod/P2/r_Card_Received_0" BEL
+        "Players_Mod/P2/r_Card_Received_1" BEL
+        "Players_Mod/P2/r_Card_Received_2" BEL
+        "Players_Mod/P2/r_Card_Received_3" BEL
+        "Players_Mod/P2/r_Card_Received_4" BEL
+        "Players_Mod/P2/r_Card_Received_5" BEL
+        "Players_Mod/P2/r_Memory_Card_2_0" BEL
+        "Players_Mod/P2/r_Memory_Card_2_1" BEL
+        "Players_Mod/P2/r_Memory_Card_2_2" BEL
+        "Players_Mod/P2/r_Memory_Card_2_3" BEL
+        "Players_Mod/P2/r_Memory_Card_2_4" BEL
+        "Players_Mod/P2/r_Memory_Card_2_5" BEL
+        "Players_Mod/P2/r_Memory_Card_0_0" BEL
+        "Players_Mod/P2/r_Memory_Card_0_1" BEL
+        "Players_Mod/P2/r_Memory_Card_0_2" BEL
+        "Players_Mod/P2/r_Memory_Card_0_3" BEL
+        "Players_Mod/P2/r_Memory_Card_0_4" BEL
+        "Players_Mod/P2/r_Memory_Card_0_5" BEL
+        "Players_Mod/P2/r_Memory_Card_1_0" BEL
+        "Players_Mod/P2/r_Memory_Card_1_1" BEL
+        "Players_Mod/P2/r_Memory_Card_1_2" BEL
+        "Players_Mod/P2/r_Memory_Card_1_3" BEL
+        "Players_Mod/P2/r_Memory_Card_1_4" BEL
+        "Players_Mod/P2/r_Memory_Card_1_5" BEL
+        "Players_Mod/P2/r_Memory_Card_3_0" BEL
+        "Players_Mod/P2/r_Memory_Card_3_1" BEL
+        "Players_Mod/P2/r_Memory_Card_3_2" BEL
+        "Players_Mod/P2/r_Memory_Card_3_3" BEL
+        "Players_Mod/P2/r_Memory_Card_3_4" BEL
+        "Players_Mod/P2/r_Memory_Card_3_5" BEL "Players_Mod/P2/r_Offset_Y_3"
+        BEL "Players_Mod/P2/r_Offset_Y_7" BEL "Players_Mod/P2/r_Offset_X_3"
+        BEL "Players_Mod/P2/r_Offset_X_6" BEL "Players_Mod/P2/r_Offset_X_7"
+        BEL "Players_Mod/P2/r_Player_CG_Card_0" BEL
+        "Players_Mod/P2/r_Player_CG_Card_1" BEL
+        "Players_Mod/P2/r_Player_CG_Card_2" BEL
+        "Players_Mod/P2/r_Player_CG_Card_3" BEL
+        "Players_Mod/P2/r_Player_CG_Card_4" BEL
+        "Players_Mod/P2/r_Player_CG_Card_5" BEL
+        "Players_Mod/P2/r_Player_VRam_Data_0" BEL
+        "Players_Mod/P2/r_Player_VRam_Data_1" BEL
+        "Players_Mod/P2/r_Player_VRam_Data_2" BEL
+        "Players_Mod/P2/r_CBR_Counter_0" BEL "Players_Mod/P2/r_CBR_Counter_1"
+        BEL "Players_Mod/P2/r_CBR_Counter_2" BEL
+        "Players_Mod/P2/r_CBR_Counter_3" BEL "Players_Mod/P2/r_CBR_Counter_4"
+        BEL "Players_Mod/P2/r_CBR_Counter_5" BEL
+        "Players_Mod/P2/r_CBR_Counter_6" BEL "Players_Mod/P2/r_CBR_Counter_7"
+        BEL "Players_Mod/P2/r_CBR_Counter_8" BEL
+        "Players_Mod/P2/r_CBR_Counter_9" BEL "Players_Mod/P2/r_CBR_Counter_10"
+        BEL "Players_Mod/P2/r_CBR_Counter_11" BEL
+        "Players_Mod/P2/r_CBR_Counter_12" BEL "Players_Mod/P2/r_HPOS_0" BEL
+        "Players_Mod/P2/r_HPOS_1" BEL "Players_Mod/P2/r_HPOS_2" BEL
+        "Players_Mod/P2/r_HPOS_3" BEL "Players_Mod/P2/r_HPOS_4" BEL
+        "Players_Mod/P2/r_HPOS_5" BEL "Players_Mod/P2/r_HPOS_6" BEL
+        "Players_Mod/P2/r_Player_CBR_Address_0" BEL
+        "Players_Mod/P2/r_Player_CBR_Address_1" BEL
+        "Players_Mod/P2/r_Player_CBR_Address_2" BEL
+        "Players_Mod/P2/r_Player_CBR_Address_3" BEL
+        "Players_Mod/P2/r_Player_CBR_Address_4" BEL
+        "Players_Mod/P2/r_Player_CBR_Address_5" BEL
+        "Players_Mod/P2/r_Player_CBR_Address_6" BEL
+        "Players_Mod/P2/r_Player_CBR_Address_7" BEL
+        "Players_Mod/P2/r_Player_CBR_Address_8" BEL
+        "Players_Mod/P2/r_Player_CBR_Address_9" BEL
+        "Players_Mod/P2/r_Player_CBR_Address_10" BEL
+        "Players_Mod/P2/r_Player_CBR_Address_11" BEL
+        "Players_Mod/P2/r_Player_CBR_Address_12" BEL "Players_Mod/P2/r_VPOS_0"
+        BEL "Players_Mod/P2/r_VPOS_1" BEL "Players_Mod/P2/r_VPOS_2" BEL
+        "Players_Mod/P2/r_VPOS_3" BEL "Players_Mod/P2/r_VPOS_4" BEL
+        "Players_Mod/P2/r_VPOS_5" BEL "Players_Mod/P2/r_VPOS_6" BEL
+        "Players_Mod/P2/r_Player_VRam_Address_0" BEL
+        "Players_Mod/P2/r_Player_VRam_Address_1" BEL
+        "Players_Mod/P2/r_Player_VRam_Address_2" BEL
+        "Players_Mod/P2/r_Player_VRam_Address_3" BEL
+        "Players_Mod/P2/r_Player_VRam_Address_4" BEL
+        "Players_Mod/P2/r_Player_VRam_Address_5" BEL
+        "Players_Mod/P2/r_Player_VRam_Address_6" BEL
+        "Players_Mod/P2/r_Player_VRam_Address_7" BEL
+        "Players_Mod/P2/r_Player_VRam_Address_8" BEL
+        "Players_Mod/P2/r_Player_VRam_Address_9" BEL
+        "Players_Mod/P2/r_Player_VRam_Address_10" BEL
+        "Players_Mod/P2/r_Player_VRam_Address_11" BEL
+        "Players_Mod/P2/r_Player_VRam_Address_12" BEL
+        "Players_Mod/P2/r_Player_VRam_Address_13" BEL
+        "Players_Mod/P2/r_Player_VRam_Address_14" BEL
+        "Players_Mod/P2/r_Player_VRam_Address_15" BEL
+        "Players_Mod/CG/r_Card_Seed_Counter_9" BEL
+        "Players_Mod/CG/r_Card_Seed_Counter_8" BEL
+        "Players_Mod/CG/r_Card_Seed_Counter_7" BEL
+        "Players_Mod/CG/r_Card_Seed_Counter_6" BEL
+        "Players_Mod/CG/r_Card_Seed_Counter_5" BEL
+        "Players_Mod/CG/r_Card_Seed_Counter_4" BEL
+        "Players_Mod/CG/r_Card_Seed_Counter_3" BEL
+        "Players_Mod/CG/r_Card_Seed_Counter_2" BEL
+        "Players_Mod/CG/r_Card_Seed_Counter_1" BEL
+        "Players_Mod/CG/r_Card_Seed_Counter_0" BEL "Players_Mod/CG/r_HPOS_5"
+        BEL "Players_Mod/CG/r_HPOS_3" BEL "Players_Mod/CG/r_HPOS_2" BEL
+        "Players_Mod/CG/r_HPOS_4" BEL "Players_Mod/CG/r_Card_Number_Counter_7"
+        BEL "Players_Mod/CG/r_Card_Number_Counter_6" BEL
+        "Players_Mod/CG/r_Card_Number_Counter_5" BEL
+        "Players_Mod/CG/r_Card_Number_Counter_4" BEL
+        "Players_Mod/CG/r_Card_Number_Counter_3" BEL
+        "Players_Mod/CG/r_Card_Number_Counter_2" BEL
+        "Players_Mod/CG/r_Card_Number_Counter_1" BEL
+        "Players_Mod/CG/r_Card_Number_Counter_0" BEL
+        "Players_Mod/CG/r_Output_Card_Data_2" BEL
+        "Players_Mod/CG/r_Output_Card_Data_1" BEL
+        "Players_Mod/CG/r_Output_Card_Data_0" BEL
+        "Players_Mod/CG/r_Card_Number_Address_12" BEL
+        "Players_Mod/CG/r_Card_Number_Address_11" BEL
+        "Players_Mod/CG/r_Card_Number_Address_10" BEL
+        "Players_Mod/CG/r_Card_Number_Address_9" BEL
+        "Players_Mod/CG/r_Card_Number_Address_8" BEL
+        "Players_Mod/CG/r_Card_Number_Address_7" BEL
+        "Players_Mod/CG/r_Card_Number_Address_6" BEL
+        "Players_Mod/CG/r_Card_Number_Address_5" BEL
+        "Players_Mod/CG/r_Card_Number_Address_4" BEL
+        "Players_Mod/CG/r_Card_Number_Address_3" BEL
+        "Players_Mod/CG/r_Card_Number_Address_2" BEL
+        "Players_Mod/CG/r_Card_Number_Address_1" BEL
+        "Players_Mod/CG/r_Card_Number_Address_0" BEL "Players_Mod/CG/r_VPOS_6"
+        BEL "Players_Mod/CG/r_VPOS_5" BEL "Players_Mod/CG/r_VPOS_4" BEL
+        "Players_Mod/CG/r_VPOS_3" BEL "Players_Mod/CG/r_VPOS_2" BEL
+        "Players_Mod/CG/r_VPOS_1" BEL "Players_Mod/CG/r_VPOS_0" BEL
+        "Players_Mod/CG/r_Card_Seed_Address_11" BEL
+        "Players_Mod/CG/r_Card_Seed_Address_10" BEL
+        "Players_Mod/CG/r_Card_Seed_Address_9" BEL
+        "Players_Mod/CG/r_Card_Seed_Address_8" BEL
+        "Players_Mod/CG/r_Card_Seed_Address_7" BEL
+        "Players_Mod/CG/r_Card_Seed_Address_6" BEL
+        "Players_Mod/CG/r_Card_Seed_Address_5" BEL
+        "Players_Mod/CG/r_Card_Seed_Address_4" BEL
+        "Players_Mod/CG/r_Card_Seed_Address_3" BEL
+        "Players_Mod/CG/r_Card_Seed_Address_2" BEL
+        "Players_Mod/CG/r_Card_Seed_Address_1" BEL
+        "Players_Mod/CG/r_Card_Seed_Address_0" BEL
+        "Players_Mod/CG/r_Requested_Number_3" BEL
+        "Players_Mod/CG/r_Requested_Number_2" BEL
+        "Players_Mod/CG/r_Requested_Number_1" BEL
+        "Players_Mod/CG/r_Requested_Number_0" BEL
+        "Players_Mod/CG/r_Requested_Seed_1" BEL
+        "Players_Mod/CG/r_Requested_Seed_0" BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_Sum_Up_4"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_Sum_Up_3"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_Sum_Up_2"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_Sum_Up_1"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_Sum_Up_0"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_Sum_Down_4"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_Sum_Down_3"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_Sum_Down_2"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_Sum_Down_1"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Number_Card_2"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Number_Card_1"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Number_Card_0"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_CBR_Address_12"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_CBR_Address_11"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_CBR_Address_10"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_CBR_Address_9"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_CBR_Address_8"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_CBR_Address_7"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_CBR_Address_6"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_CBR_Address_5"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_CBR_Address_4"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_CBR_Address_3"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_CBR_Address_2"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_CBR_Address_1"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_CBR_Address_0"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_VRam_Data_2"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_VRam_Data_1"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_VRam_Data_0"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_VRam_Address_15"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_VRam_Address_14"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_VRam_Address_13"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_VRam_Address_12"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_VRam_Address_11"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_VRam_Address_10"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_VRam_Address_9"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_VRam_Address_8"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_VRam_Address_7"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_VRam_Address_6"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_VRam_Address_5"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_VRam_Address_4"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_VRam_Address_3"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_VRam_Address_2"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_VRam_Address_1"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_VRam_Address_0"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_CBR_Counter_12"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_CBR_Counter_11"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_CBR_Counter_10"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_CBR_Counter_9"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_CBR_Counter_8"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_CBR_Counter_7"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_CBR_Counter_6"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_CBR_Counter_5"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_CBR_Counter_4"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_CBR_Counter_3"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_CBR_Counter_2"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_CBR_Counter_1"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_CBR_Counter_0"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_VPOS_6"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_VPOS_5"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_VPOS_4"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_VPOS_3"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_VPOS_2"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_VPOS_1"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_VPOS_0"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_HPOS_6"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_HPOS_5"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_HPOS_4"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_HPOS_3"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_HPOS_2"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_HPOS_1"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_HPOS_0"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_CG_Card_5"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_CG_Card_4"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_CG_Card_3"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_CG_Card_2"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_CG_Card_1"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_CG_Card_0"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Offset_X_8"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Offset_X_6"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Offset_X_5"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Offset_X_4"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Offset_X_1"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Memory_Card_0_5"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Memory_Card_0_4"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Memory_Card_0_3"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Memory_Card_0_2"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Memory_Card_0_1"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Memory_Card_0_0"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Memory_Card_1_5"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Memory_Card_1_4"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Memory_Card_1_3"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Memory_Card_1_2"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Memory_Card_1_1"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Memory_Card_1_0"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Card_Received_5"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Card_Received_4"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Card_Received_3"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Card_Received_2"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Card_Received_1"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Card_Received_0"
+        BEL "Players_Mod/DM/o_card_5" BEL "Players_Mod/DM/o_card_4" BEL
+        "Players_Mod/DM/o_card_3" BEL "Players_Mod/DM/o_card_2" BEL
+        "Players_Mod/DM/o_card_1" BEL "Players_Mod/DM/o_card_0" BEL
+        "Players_Mod/DM/r_LSFR_rec_5" BEL "Players_Mod/DM/r_LSFR_rec_4" BEL
+        "Players_Mod/DM/r_LSFR_rec_3" BEL "Players_Mod/DM/r_LSFR_rec_2" BEL
+        "Players_Mod/DM/r_LSFR_rec_1" BEL "Players_Mod/DM/r_LSFR_rec_0" BEL
+        "Players_Mod/DM/r_deck_1" BEL "Players_Mod/DM/r_deck_2" BEL
+        "Players_Mod/DM/r_deck_3" BEL "Players_Mod/DM/r_deck_4" BEL
+        "Players_Mod/DM/r_deck_5" BEL "Players_Mod/DM/r_deck_6" BEL
+        "Players_Mod/DM/r_deck_7" BEL "Players_Mod/DM/r_deck_8" BEL
+        "Players_Mod/DM/r_deck_9" BEL "Players_Mod/DM/r_deck_10" BEL
+        "Players_Mod/DM/r_deck_11" BEL "Players_Mod/DM/r_deck_12" BEL
+        "Players_Mod/DM/r_deck_13" BEL "Players_Mod/DM/r_deck_17" BEL
+        "Players_Mod/DM/r_deck_18" BEL "Players_Mod/DM/r_deck_19" BEL
+        "Players_Mod/DM/r_deck_20" BEL "Players_Mod/DM/r_deck_21" BEL
+        "Players_Mod/DM/r_deck_22" BEL "Players_Mod/DM/r_deck_23" BEL
+        "Players_Mod/DM/r_deck_24" BEL "Players_Mod/DM/r_deck_25" BEL
+        "Players_Mod/DM/r_deck_26" BEL "Players_Mod/DM/r_deck_27" BEL
+        "Players_Mod/DM/r_deck_28" BEL "Players_Mod/DM/r_deck_29" BEL
+        "Players_Mod/DM/r_deck_33" BEL "Players_Mod/DM/r_deck_34" BEL
+        "Players_Mod/DM/r_deck_35" BEL "Players_Mod/DM/r_deck_36" BEL
+        "Players_Mod/DM/r_deck_37" BEL "Players_Mod/DM/r_deck_38" BEL
+        "Players_Mod/DM/r_deck_39" BEL "Players_Mod/DM/r_deck_40" BEL
+        "Players_Mod/DM/r_deck_41" BEL "Players_Mod/DM/r_deck_42" BEL
+        "Players_Mod/DM/r_deck_43" BEL "Players_Mod/DM/r_deck_44" BEL
+        "Players_Mod/DM/r_deck_45" BEL "Players_Mod/DM/r_deck_49" BEL
+        "Players_Mod/DM/r_deck_50" BEL "Players_Mod/DM/r_deck_51" BEL
+        "Players_Mod/DM/r_deck_52" BEL "Players_Mod/DM/r_deck_53" BEL
+        "Players_Mod/DM/r_deck_54" BEL "Players_Mod/DM/r_deck_55" BEL
+        "Players_Mod/DM/r_deck_56" BEL "Players_Mod/DM/r_deck_57" BEL
+        "Players_Mod/DM/r_deck_58" BEL "Players_Mod/DM/r_deck_59" BEL
+        "Players_Mod/DM/r_deck_60" BEL "Players_Mod/DM/r_deck_61" BEL
+        "Players_Mod/P1/r_StopPrinting" BEL "Players_Mod/P1/r_Player_Stand"
+        BEL "Players_Mod/P1/r_Player_CG_Request" BEL "Players_Mod/P1/r_Flag"
+        BEL "Players_Mod/P2/r_StopPrinting" BEL
+        "Players_Mod/P2/r_Player_Stand" BEL
+        "Players_Mod/P2/r_Player_CG_Request" BEL "Players_Mod/P2/r_Flag" BEL
+        "Players_Mod/CG/r_HPOS_0" BEL "Players_Mod/CG/r_HPOS_6" BEL
+        "Players_Mod/CG/r_HPOS_1" BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_CG_Request"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Flag"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_StopPrinting"
+        BEL "Players_Mod/P1/r_CG_Printing" BEL "Players_Mod/P1/r_CBR_Printing"
+        BEL "Players_Mod/P1/r_Select_1" BEL "Players_Mod/P2/r_CG_Printing" BEL
+        "Players_Mod/P2/r_CBR_Printing" BEL "Players_Mod/P2/r_Select_0" BEL
+        "Players_Mod/CG/r_Card_ACK" BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Number_0"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_DM_Hit"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_CG_Printing"
+        BEL "Players_Mod/DM/r_hit_got" BEL "Players_Mod/DM/r_found" BEL
+        "Players_Mod/DM/r_found_output" BEL "Deb_Mod_2/r_State" BEL
+        "Deb_Mod/r_State" BEL "Players_Mod/CG/r_Requested_Color" BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_CBR_Printing"
+        BEL
+        "Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Select_0"
+        BEL "Players_Mod/DM/lsfr_1/LFSR_Proc.LFSR_Reg_5" BEL
+        "Players_Mod/DM/lsfr_1/LFSR_Proc.LFSR_Reg_4" BEL
+        "Players_Mod/DM/lsfr_1/LFSR_Proc.LFSR_Reg_3" BEL
+        "Players_Mod/DM/lsfr_1/LFSR_Proc.LFSR_Reg_2" BEL
+        "Players_Mod/DM/lsfr_1/LFSR_Proc.LFSR_Reg_1" BEL
+        "Players_Mod/DM/lsfr_1/LFSR_Proc.LFSR_Reg_0" PIN
+        "Players_Mod/CG/Seed_Rom/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM18.ram_pins<32>"
+        PIN
+        "Players_Mod/CG/Seed_Rom/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM18.ram_pins<33>"
+        PIN
+        "Players_Mod/CB/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_pins<63>"
+        PIN
+        "Players_Mod/CB/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_pins<62>"
+        PIN
+        "Players_Mod/CB/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_pins<65>"
+        PIN
+        "Players_Mod/CB/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_pins<64>"
+        PIN
+        "Players_Mod/CG/Num_Rom/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_pins<63>"
+        PIN
+        "Players_Mod/CG/Num_Rom/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_pins<62>"
+        PIN
+        "Players_Mod/CG/Num_Rom/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_pins<65>"
+        PIN
+        "Players_Mod/CG/Num_Rom/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_pins<64>"
+        PIN
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<65>"
+        PIN
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<64>"
+        PIN
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<65>"
+        PIN
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<64>"
+        PIN
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<65>"
+        PIN
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<64>"
+        PIN
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<65>"
+        PIN
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<64>"
+        PIN
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<65>"
+        PIN
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<64>"
+        PIN
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<65>"
+        PIN
+        "Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<64>"
+        PIN
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<65>"
+        PIN
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<64>"
+        PIN
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<65>"
+        PIN
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<64>"
+        PIN
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<65>"
+        PIN
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<64>"
+        PIN
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<65>"
+        PIN
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<64>"
+        PIN
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<65>"
+        PIN
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<64>"
+        PIN
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<65>"
+        PIN
+        "Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<64>"
+        PIN
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<65>"
+        PIN
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<64>"
+        PIN
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<65>"
+        PIN
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<64>"
+        PIN
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<65>"
+        PIN
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<64>"
+        PIN
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<65>"
+        PIN
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<64>"
+        PIN
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<65>"
+        PIN
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_pins<64>"
+        PIN
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<65>"
+        PIN
+        "Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_pins<64>";
+PIN CR/mmcm_adv_inst_pins<2> = BEL "CR/mmcm_adv_inst" PINNAME CLKIN1;
+TIMEGRP sys_clk_pin = PIN "CR/mmcm_adv_inst_pins<2>";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 125 MHz HIGH 50%;
+TS_CR_clkout0 = PERIOD TIMEGRP "CR_clkout0" TS_sys_clk_pin HIGH 50%;
+TS_CR_clkout1 = PERIOD TIMEGRP "CR_clkout1" TS_sys_clk_pin * 0.32 HIGH 50%;
+SCHEMATIC END;
+

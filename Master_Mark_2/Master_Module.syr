@@ -1,0 +1,1274 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.26 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.29 secs
+ 
+--> Reading design: Master_Module.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Master_Module.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Master_Module"
+Output Format                      : NGC
+Target Device                      : xc7z010-3-clg400
+
+---- Source Options
+Top Module Name                    : Master_Module
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Stefano\Desktop\Master_Mark_2\Seeds_Rom.vhd" into library work
+Parsing entity <Seeds_Rom>.
+Parsing architecture <Seeds_Rom_a> of entity <seeds_rom>.
+Parsing VHDL file "C:\Users\Stefano\Desktop\Master_Mark_2\Numbers_Rom.vhd" into library work
+Parsing entity <Numbers_Rom>.
+Parsing architecture <Numbers_Rom_a> of entity <numbers_rom>.
+Parsing VHDL file "C:\Users\Stefano\Desktop\Master_Mark_2\Lsfr.vhd" into library work
+Parsing entity <Lsfr>.
+Parsing architecture <Behavioral> of entity <lsfr>.
+Parsing VHDL file "C:\Users\Stefano\Desktop\Master_Mark_2\Constants.vhd" into library work
+Parsing package <Constants>.
+Parsing package body <Constants>.
+Parsing VHDL file "C:\Users\Stefano\Desktop\Master_Mark_2\Cards_Constants.vhd" into library work
+Parsing package <Cards_Constants>.
+Parsing package body <Cards_Constants>.
+Parsing VHDL file "C:\Users\Stefano\Desktop\Master_Mark_2\VRam_3Bit.vhd" into library work
+Parsing entity <VRam_3Bit>.
+Parsing architecture <VRam_3Bit_a> of entity <vram_3bit>.
+Parsing VHDL file "C:\Users\Stefano\Desktop\Master_Mark_2\Synchronizer.vhd" into library work
+Parsing entity <Synchronizer>.
+Parsing architecture <Main> of entity <synchronizer>.
+Parsing VHDL file "C:\Users\Stefano\Desktop\Master_Mark_2\Player_Real.vhd" into library work
+Parsing entity <Player>.
+Parsing architecture <Behavioral> of entity <player>.
+Parsing VHDL file "C:\Users\Stefano\Desktop\Master_Mark_2\Drawer.vhd" into library work
+Parsing entity <Drawer>.
+Parsing architecture <Behavioral> of entity <drawer>.
+Parsing VHDL file "C:\Users\Stefano\Desktop\Master_Mark_2\Deck_Manager.vhd" into library work
+Parsing entity <Deck_Manager>.
+Parsing architecture <Behavioral> of entity <deck_manager>.
+Parsing VHDL file "C:\Users\Stefano\Desktop\Master_Mark_2\Dealer.vhd" into library work
+Parsing entity <Dealer>.
+Parsing architecture <Behavioral> of entity <dealer>.
+Parsing VHDL file "C:\Users\Stefano\Desktop\Master_Mark_2\Cards_Generator.vhd" into library work
+Parsing entity <Cards_Generator>.
+Parsing architecture <Behavioral> of entity <cards_generator>.
+Parsing VHDL file "C:\Users\Stefano\Desktop\Master_Mark_2\CardBack.vhd" into library work
+Parsing entity <CardBack>.
+Parsing architecture <CardBack_a> of entity <cardback>.
+Parsing VHDL file "C:\Users\Stefano\Desktop\Master_Mark_2\Vga.vhd" into library work
+Parsing entity <Vga>.
+Parsing architecture <Behavioral> of entity <vga>.
+Parsing VHDL file "C:\Users\Stefano\Desktop\Master_Mark_2\Players_Manager.vhd" into library work
+Parsing entity <Players_Manager>.
+Parsing architecture <Behavioral> of entity <players_manager>.
+Parsing VHDL file "C:\Users\Stefano\Desktop\Master_Mark_2\Debounce_Switch.vhd" into library work
+Parsing entity <Debounce_Switch>.
+Parsing architecture <Behavioral> of entity <debounce_switch>.
+Parsing VHDL file "C:\Users\Stefano\Desktop\Master_Mark_2\Clock_Regulator.vhd" into library work
+Parsing entity <Clock_Regulator>.
+Parsing architecture <xilinx> of entity <clock_regulator>.
+Parsing VHDL file "C:\Users\Stefano\Desktop\Master_Mark_2\Master_Module.vhd" into library work
+Parsing entity <Master_Module>.
+Parsing architecture <Behavioral> of entity <master_module>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Master_Module> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Clock_Regulator> (architecture <xilinx>) from library <work>.
+
+Elaborating entity <Debounce_Switch> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Vga> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Synchronizer> (architecture <Main>) from library <work>.
+
+Elaborating entity <VRam_3Bit> (architecture <VRam_3Bit_a>) from library <work>.
+
+Elaborating entity <Drawer> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Players_Manager> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:794 - "C:\Users\Stefano\Desktop\Master_Mark_2\Players_Manager.vhd" Line 139: Statement might not cover all choices ; 'others' clause recommended
+WARNING:HDLCompiler:794 - "C:\Users\Stefano\Desktop\Master_Mark_2\Players_Manager.vhd" Line 144: Statement might not cover all choices ; 'others' clause recommended
+WARNING:HDLCompiler:794 - "C:\Users\Stefano\Desktop\Master_Mark_2\Players_Manager.vhd" Line 149: Statement might not cover all choices ; 'others' clause recommended
+WARNING:HDLCompiler:794 - "C:\Users\Stefano\Desktop\Master_Mark_2\Players_Manager.vhd" Line 154: Statement might not cover all choices ; 'others' clause recommended
+WARNING:HDLCompiler:794 - "C:\Users\Stefano\Desktop\Master_Mark_2\Players_Manager.vhd" Line 159: Statement might not cover all choices ; 'others' clause recommended
+WARNING:HDLCompiler:794 - "C:\Users\Stefano\Desktop\Master_Mark_2\Players_Manager.vhd" Line 164: Statement might not cover all choices ; 'others' clause recommended
+WARNING:HDLCompiler:794 - "C:\Users\Stefano\Desktop\Master_Mark_2\Players_Manager.vhd" Line 169: Statement might not cover all choices ; 'others' clause recommended
+
+Elaborating entity <CardBack> (architecture <CardBack_a>) from library <work>.
+
+Elaborating entity <Cards_Generator> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Numbers_Rom> (architecture <Numbers_Rom_a>) from library <work>.
+
+Elaborating entity <Seeds_Rom> (architecture <Seeds_Rom_a>) from library <work>.
+
+Elaborating entity <Dealer> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:1127 - "C:\Users\Stefano\Desktop\Master_Mark_2\Dealer.vhd" Line 52: Assignment to r_dealer_stand ignored, since the identifier is never used
+
+Elaborating entity <Player> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Deck_Manager> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Lsfr> (architecture <Behavioral>) with generics from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\Stefano\Desktop\Master_Mark_2\Lsfr.vhd" Line 36: resetn should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Stefano\Desktop\Master_Mark_2\Lsfr.vhd" Line 79: load should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Stefano\Desktop\Master_Mark_2\Lsfr.vhd" Line 83: seed should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Stefano\Desktop\Master_Mark_2\Lsfr.vhd" Line 84: seed should be on the sensitivity list of the process
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Master_Module>.
+    Related source file is "C:\Users\Stefano\Desktop\Master_Mark_2\Master_Module.vhd".
+    Summary:
+	no macro.
+Unit <Master_Module> synthesized.
+
+Synthesizing Unit <Clock_Regulator>.
+    Related source file is "C:\Users\Stefano\Desktop\Master_Mark_2\Clock_Regulator.vhd".
+    Summary:
+	no macro.
+Unit <Clock_Regulator> synthesized.
+
+Synthesizing Unit <Debounce_Switch>.
+    Related source file is "C:\Users\Stefano\Desktop\Master_Mark_2\Debounce_Switch.vhd".
+    Found 1-bit register for signal <r_State>.
+    Found 21-bit register for signal <r_Count>.
+    Found 21-bit adder for signal <r_Count[20]_GND_40_o_add_1_OUT> created at line 48.
+    Found 21-bit comparator greater for signal <r_Count[20]_PWR_10_o_LessThan_1_o> created at line 47
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  22 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <Debounce_Switch> synthesized.
+
+Synthesizing Unit <Vga>.
+    Related source file is "C:\Users\Stefano\Desktop\Master_Mark_2\Vga.vhd".
+    Summary:
+	no macro.
+Unit <Vga> synthesized.
+
+Synthesizing Unit <Synchronizer>.
+    Related source file is "C:\Users\Stefano\Desktop\Master_Mark_2\Synchronizer.vhd".
+    Found 1-bit register for signal <r_VideoOn>.
+    Found 10-bit register for signal <VPOS>.
+    Found 11-bit register for signal <HPOS>.
+    Found 1-bit register for signal <r_H_Sync>.
+    Found 1-bit register for signal <r_V_Sync>.
+    Found 3-bit register for signal <o_Sync_ActiveVRam>.
+    Found 11-bit register for signal <r_MemorySyncro_HPOS_4>.
+    Found 10-bit register for signal <r_MemorySyncro_VPOS_4>.
+    Found 11-bit adder for signal <HPOS[10]_GND_43_o_add_1_OUT> created at line 46.
+    Found 10-bit adder for signal <VPOS[9]_GND_43_o_add_3_OUT> created at line 50.
+    Found 11-bit adder for signal <HPOS[10]_GND_43_o_add_20_OUT> created at line 90.
+    Found 12-bit adder for signal <n0123> created at line 93.
+    Found 11-bit subtractor for signal <GND_43_o_GND_43_o_sub_23_OUT<10:0>> created at line 93.
+    Found 11-bit comparator greater for signal <HPOS[10]_PWR_13_o_LessThan_1_o> created at line 45
+    Found 10-bit comparator greater for signal <VPOS[9]_PWR_13_o_LessThan_3_o> created at line 49
+    Found 11-bit comparator lessequal for signal <n0007> created at line 57
+    Found 11-bit comparator greater for signal <HPOS[10]_GND_43_o_LessThan_9_o> created at line 57
+    Found 10-bit comparator greater for signal <PWR_13_o_VPOS[9]_LessThan_10_o> created at line 63
+    Found 10-bit comparator greater for signal <VPOS[9]_PWR_13_o_LessThan_11_o> created at line 63
+    Found 11-bit comparator lessequal for signal <n0016> created at line 69
+    Found 10-bit comparator lessequal for signal <n0019> created at line 69
+    Found 11-bit comparator greater for signal <HPOS[10]_PWR_13_o_LessThan_20_o> created at line 89
+    Found 11-bit comparator lessequal for signal <n0045> created at line 104
+    Found 11-bit comparator greater for signal <r_MemorySyncro_HPOS_4[10]_GND_43_o_LessThan_30_o> created at line 104
+    Found 10-bit comparator lessequal for signal <n0048> created at line 105
+    Found 10-bit comparator greater for signal <r_MemorySyncro_VPOS_4[9]_GND_43_o_LessThan_32_o> created at line 105
+    Found 11-bit comparator lessequal for signal <n0054> created at line 110
+    Found 11-bit comparator greater for signal <r_MemorySyncro_HPOS_4[10]_GND_43_o_LessThan_34_o> created at line 110
+    Found 11-bit comparator lessequal for signal <n0060> created at line 115
+    Found 11-bit comparator greater for signal <r_MemorySyncro_HPOS_4[10]_GND_43_o_LessThan_38_o> created at line 115
+    Found 10-bit comparator lessequal for signal <n0063> created at line 116
+    Found 10-bit comparator greater for signal <r_MemorySyncro_VPOS_4[9]_PWR_13_o_LessThan_40_o> created at line 116
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  48 D-type flip-flop(s).
+	inferred  19 Comparator(s).
+	inferred   6 Multiplexer(s).
+Unit <Synchronizer> synthesized.
+
+Synthesizing Unit <Drawer>.
+    Related source file is "C:\Users\Stefano\Desktop\Master_Mark_2\Drawer.vhd".
+    Found 16-bit register for signal <r_Vram_Counter_Dealer>.
+    Found 16-bit register for signal <r_Vram_Address_Dealer>.
+    Found 16-bit register for signal <r_Vram_Counter_1>.
+    Found 16-bit register for signal <r_Vram_Address_1>.
+    Found 16-bit register for signal <r_Vram_Counter_2>.
+    Found 16-bit register for signal <r_Vram_Address_2>.
+    Found 3-bit register for signal <o_Draw_RGB>.
+    Found 16-bit adder for signal <r_Vram_Counter_Dealer[15]_GND_46_o_add_1_OUT> created at line 62.
+    Found 16-bit adder for signal <r_Vram_Counter_1[15]_GND_46_o_add_4_OUT> created at line 76.
+    Found 16-bit adder for signal <r_Vram_Counter_2[15]_GND_46_o_add_7_OUT> created at line 90.
+    Found 16-bit comparator lessequal for signal <r_Vram_Counter_Dealer[15]_PWR_16_o_LessThan_1_o> created at line 61
+    Found 16-bit comparator lessequal for signal <r_Vram_Counter_1[15]_PWR_16_o_LessThan_4_o> created at line 75
+    Found 16-bit comparator lessequal for signal <r_Vram_Counter_2[15]_PWR_16_o_LessThan_7_o> created at line 89
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  99 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred   6 Multiplexer(s).
+Unit <Drawer> synthesized.
+
+Synthesizing Unit <Players_Manager>.
+    Related source file is "C:\Users\Stefano\Desktop\Master_Mark_2\Players_Manager.vhd".
+    Found 3-bit 3-to-1 multiplexer for signal <o_Players_Vram_Data> created at line 139.
+    Found 16-bit 3-to-1 multiplexer for signal <o_Players_Vram_Address> created at line 144.
+    Found 2-bit 3-to-1 multiplexer for signal <o_Players_Vram_Sel> created at line 149.
+    Found 1-bit 3-to-1 multiplexer for signal <r_Player_req> created at line 159.
+    Found 6-bit 3-to-1 multiplexer for signal <r_Player_Num> created at line 164.
+    Found 13-bit 3-to-1 multiplexer for signal <r_Player_CBR_Address> created at line 169.
+    Summary:
+	inferred   7 Multiplexer(s).
+Unit <Players_Manager> synthesized.
+
+Synthesizing Unit <Cards_Generator>.
+    Related source file is "C:\Users\Stefano\Desktop\Master_Mark_2\Cards_Generator.vhd".
+    Found 1-bit register for signal <r_Card_ACK>.
+    Found 12-bit register for signal <r_Card_Seed_Address>.
+    Found 4-bit register for signal <r_Requested_Number>.
+    Found 2-bit register for signal <r_Requested_Seed>.
+    Found 8-bit register for signal <r_Card_Number_Counter>.
+    Found 10-bit register for signal <r_Card_Seed_Counter>.
+    Found 13-bit register for signal <r_Card_Number_Address>.
+    Found 1-bit register for signal <r_Requested_Color>.
+    Found 7-bit register for signal <r_HPOS>.
+    Found 7-bit register for signal <r_VPOS>.
+    Found 3-bit register for signal <r_Output_Card_Data>.
+    Found 7-bit adder for signal <r_HPOS[6]_GND_50_o_add_7_OUT> created at line 89.
+    Found 7-bit adder for signal <r_VPOS[6]_GND_50_o_add_9_OUT> created at line 93.
+    Found 8-bit adder for signal <r_Card_Number_Counter[7]_GND_50_o_add_29_OUT> created at line 117.
+    Found 10-bit adder for signal <r_Card_Seed_Counter[9]_GND_50_o_add_35_OUT> created at line 127.
+    Found 14-bit adder for signal <n0204[13:0]> created at line 139.
+    Found 15-bit adder for signal <n0206> created at line 139.
+    Found 13-bit adder for signal <n0209[12:0]> created at line 141.
+    Found 14-bit adder for signal <n0211> created at line 141.
+    Found 13-bit adder for signal <n0215> created at line 144.
+    Found 13-bit adder for signal <n0159> created at line 144.
+    Found 13-bit subtractor for signal <GND_50_o_GND_50_o_sub_51_OUT<12:0>> created at line 139.
+    Found 13-bit subtractor for signal <GND_50_o_GND_50_o_sub_54_OUT<12:0>> created at line 141.
+    Found 7-bit comparator greater for signal <r_HPOS[6]_PWR_20_o_LessThan_7_o> created at line 88
+    Found 7-bit comparator lessequal for signal <r_VPOS[6]_PWR_20_o_LessThan_9_o> created at line 92
+    Found 7-bit comparator greater for signal <r_HPOS[6]_GND_50_o_LessThan_14_o> created at line 99
+    Found 7-bit comparator greater for signal <GND_50_o_r_HPOS[6]_LessThan_15_o> created at line 99
+    Found 7-bit comparator greater for signal <r_VPOS[6]_GND_50_o_LessThan_16_o> created at line 99
+    Found 7-bit comparator greater for signal <PWR_20_o_r_VPOS[6]_LessThan_17_o> created at line 99
+    Found 7-bit comparator greater for signal <GND_50_o_r_HPOS[6]_LessThan_18_o> created at line 101
+    Found 7-bit comparator lessequal for signal <n0028> created at line 101
+    Found 7-bit comparator greater for signal <GND_50_o_r_VPOS[6]_LessThan_20_o> created at line 101
+    Found 7-bit comparator lessequal for signal <n0031> created at line 101
+    Found 7-bit comparator greater for signal <GND_50_o_r_HPOS[6]_LessThan_25_o> created at line 114
+    Found 7-bit comparator lessequal for signal <n0037> created at line 114
+    Found 7-bit comparator greater for signal <PWR_20_o_r_VPOS[6]_LessThan_27_o> created at line 114
+    Found 7-bit comparator lessequal for signal <n0040> created at line 114
+    Found 8-bit comparator greater for signal <r_Card_Number_Counter[7]_PWR_20_o_LessThan_29_o> created at line 116
+    Found 7-bit comparator greater for signal <GND_50_o_r_HPOS[6]_LessThan_32_o> created at line 123
+    Found 7-bit comparator lessequal for signal <n0049> created at line 123
+    Found 7-bit comparator greater for signal <GND_50_o_r_VPOS[6]_LessThan_34_o> created at line 123
+    Found 7-bit comparator lessequal for signal <n0052> created at line 123
+    Summary:
+	inferred  11 Adder/Subtractor(s).
+	inferred  68 D-type flip-flop(s).
+	inferred  19 Comparator(s).
+	inferred   8 Multiplexer(s).
+Unit <Cards_Generator> synthesized.
+
+Synthesizing Unit <Dealer>.
+    Related source file is "C:\Users\Stefano\Desktop\Master_Mark_2\Dealer.vhd".
+    Found 1-bit register for signal <r_CBR_Printing>.
+    Found 1-bit register for signal <r_StopPrinting>.
+    Found 3-bit register for signal <r_Number_Card>.
+    Found 3-bit register for signal <r_Number>.
+    Found 10-bit register for signal <r_Offset_X>.
+    Found 10-bit register for signal <r_Offset_Y>.
+    Found 1-bit register for signal <r_Flag>.
+    Found 1-bit register for signal <r_Dealer_CG_Request>.
+    Found 2-bit register for signal <r_Select>.
+    Found 6-bit register for signal <r_Memory_Card<0>>.
+    Found 6-bit register for signal <r_Memory_Card<1>>.
+    Found 6-bit register for signal <r_Memory_Card<2>>.
+    Found 6-bit register for signal <r_Memory_Card<3>>.
+    Found 6-bit register for signal <r_Memory_Card<4>>.
+    Found 3-bit register for signal <r_Dealer_VRam_Data>.
+    Found 16-bit register for signal <r_Dealer_VRam_Address>.
+    Found 6-bit register for signal <r_Dealer_CG_Card>.
+    Found 13-bit register for signal <r_Dealer_CBR_Address>.
+    Found 13-bit register for signal <r_CBR_Counter>.
+    Found 5-bit register for signal <r_Dealer_Sum_Up>.
+    Found 5-bit register for signal <r_Dealer_Sum_Down>.
+    Found 1-bit register for signal <r_DM_Hit>.
+    Found 6-bit register for signal <r_Card_Received>.
+    Found 10-bit register for signal <r_HPOS>.
+    Found 10-bit register for signal <r_VPOS>.
+    Found 1-bit register for signal <r_CG_Printing>.
+    Found 3-bit adder for signal <r_Number_Card[2]_GND_53_o_add_2_OUT> created at line 93.
+    Found 5-bit adder for signal <r_Dealer_Sum_Down[4]_GND_53_o_add_32_OUT> created at line 140.
+    Found 5-bit adder for signal <r_Dealer_Sum_Up[4]_GND_53_o_add_33_OUT> created at line 141.
+    Found 5-bit adder for signal <r_Dealer_Sum_Down[4]_GND_53_o_add_34_OUT> created at line 143.
+    Found 5-bit adder for signal <r_Dealer_Sum_Up[4]_GND_53_o_add_35_OUT> created at line 144.
+    Found 13-bit adder for signal <r_CBR_Counter[12]_GND_53_o_add_66_OUT> created at line 184.
+    Found 10-bit adder for signal <r_HPOS[9]_GND_53_o_add_104_OUT> created at line 235.
+    Found 10-bit adder for signal <r_VPOS[9]_GND_53_o_add_106_OUT> created at line 239.
+    Found 3-bit adder for signal <r_Number[2]_GND_53_o_add_107_OUT> created at line 244.
+    Found 10-bit adder for signal <n0389> created at line 247.
+    Found 10-bit adder for signal <n0390> created at line 247.
+    Found 3-bit subtractor for signal <GND_53_o_GND_53_o_sub_50_OUT<2:0>> created at line 165.
+    Found 8x20-bit Read Only RAM for signal <_n1098>
+    Found 8x20-bit Read Only RAM for signal <_n1107>
+    Found 6-bit 5-to-1 multiplexer for signal <r_Number[2]_X_21_o_wide_mux_99_OUT> created at line 221.
+    Found 5-bit comparator greater for signal <r_Dealer_Sum_Down[4]_PWR_25_o_LessThan_1_o> created at line 85
+    Found 5-bit comparator greater for signal <r_Dealer_Sum_Up[4]_PWR_25_o_LessThan_2_o> created at line 85
+    Found 3-bit comparator greater for signal <n0010> created at line 94
+    Found 3-bit comparator lessequal for signal <n0012> created at line 94
+    Found 10-bit comparator greater for signal <r_HPOS[9]_GND_53_o_LessThan_57_o> created at line 169
+    Found 10-bit comparator greater for signal <r_VPOS[9]_GND_53_o_LessThan_59_o> created at line 173
+    Found 13-bit comparator greater for signal <r_CBR_Counter[12]_PWR_25_o_LessThan_66_o> created at line 183
+    Found 3-bit comparator greater for signal <n0102> created at line 195
+    Summary:
+	inferred   2 RAM(s).
+	inferred  10 Adder/Subtractor(s).
+	inferred 151 D-type flip-flop(s).
+	inferred   8 Comparator(s).
+	inferred  46 Multiplexer(s).
+Unit <Dealer> synthesized.
+
+Synthesizing Unit <Player>.
+    Related source file is "C:\Users\Stefano\Desktop\Master_Mark_2\Player_Real.vhd".
+WARNING:Xst:647 - Input <i_Player_Hit> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <r_CG_Printing>.
+    Found 1-bit register for signal <r_CBR_Printing>.
+    Found 1-bit register for signal <r_StopPrinting>.
+    Found 3-bit register for signal <r_Number_Card>.
+    Found 3-bit register for signal <r_Number>.
+    Found 10-bit register for signal <r_Offset_X>.
+    Found 10-bit register for signal <r_Offset_Y>.
+    Found 1-bit register for signal <r_Flag>.
+    Found 1-bit register for signal <r_Player_CG_Request>.
+    Found 2-bit register for signal <r_Select>.
+    Found 6-bit register for signal <r_Memory_Card<0>>.
+    Found 6-bit register for signal <r_Memory_Card<1>>.
+    Found 6-bit register for signal <r_Memory_Card<2>>.
+    Found 6-bit register for signal <r_Memory_Card<3>>.
+    Found 6-bit register for signal <r_Memory_Card<4>>.
+    Found 3-bit register for signal <r_Player_VRam_Data>.
+    Found 16-bit register for signal <r_Player_VRam_Address>.
+    Found 6-bit register for signal <r_Player_CG_Card>.
+    Found 13-bit register for signal <r_Player_CBR_Address>.
+    Found 13-bit register for signal <r_CBR_Counter>.
+    Found 1-bit register for signal <r_Player_Stand>.
+    Found 10-bit register for signal <r_HPOS>.
+    Found 10-bit register for signal <r_VPOS>.
+    Found 6-bit register for signal <r_Card_Received>.
+    Found 3-bit adder for signal <r_Number_Card[2]_GND_54_o_add_0_OUT> created at line 91.
+    Found 13-bit adder for signal <r_CBR_Counter[12]_GND_54_o_add_57_OUT> created at line 167.
+    Found 10-bit adder for signal <r_HPOS[9]_GND_54_o_add_93_OUT> created at line 216.
+    Found 10-bit adder for signal <r_VPOS[9]_GND_54_o_add_95_OUT> created at line 220.
+    Found 3-bit adder for signal <r_Number[2]_GND_54_o_add_96_OUT> created at line 225.
+    Found 10-bit adder for signal <n0361> created at line 228.
+    Found 10-bit adder for signal <n0362> created at line 228.
+    Found 3-bit subtractor for signal <GND_54_o_GND_54_o_sub_41_OUT<2:0>> created at line 151.
+    Found 8x10-bit Read Only RAM for signal <n0457>
+    Found 8x10-bit Read Only RAM for signal <n0450>
+    Found 8x10-bit Read Only RAM for signal <n0456>
+    Found 8x10-bit Read Only RAM for signal <n0449>
+    Found 6-bit 5-to-1 multiplexer for signal <r_Number[2]_X_22_o_wide_mux_88_OUT> created at line 202.
+    Found 3-bit comparator greater for signal <n0007> created at line 92
+    Found 3-bit comparator lessequal for signal <n0009> created at line 92
+    Found 13-bit comparator greater for signal <r_CBR_Counter[12]_PWR_28_o_LessThan_57_o> created at line 166
+    Found 3-bit comparator greater for signal <n0088> created at line 176
+    Found 10-bit comparator greater for signal <r_HPOS[9]_GND_54_o_LessThan_93_o> created at line 215
+    Found 10-bit comparator greater for signal <r_VPOS[9]_GND_54_o_LessThan_95_o> created at line 219
+    Summary:
+	inferred   4 RAM(s).
+	inferred   8 Adder/Subtractor(s).
+	inferred 141 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+	inferred  49 Multiplexer(s).
+Unit <Player> synthesized.
+
+Synthesizing Unit <Deck_Manager>.
+    Related source file is "C:\Users\Stefano\Desktop\Master_Mark_2\Deck_Manager.vhd".
+WARNING:Xst:647 - Input <i_new_game> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:\Users\Stefano\Desktop\Master_Mark_2\Deck_Manager.vhd" line 37: Output port <serial_out> of the instance <lsfr_1> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <r_found>.
+    Found 1-bit register for signal <r_found_output>.
+    Found 1-bit register for signal <r_hit_got>.
+    Found 64-bit register for signal <r_deck>.
+    Found 6-bit register for signal <o_card>.
+    Found 6-bit register for signal <r_LSFR_rec>.
+    Found 1-bit 64-to-1 multiplexer for signal <r_LSFR[5]_r_deck[63]_Mux_0_o> created at line 73.
+    Summary:
+	inferred  79 D-type flip-flop(s).
+	inferred  65 Multiplexer(s).
+Unit <Deck_Manager> synthesized.
+
+Synthesizing Unit <Lsfr>.
+    Related source file is "C:\Users\Stefano\Desktop\Master_Mark_2\Lsfr.vhd".
+        Width = 6
+    Found 1-bit register for signal <LFSR_Proc.LFSR_Reg<5>>.
+    Found 1-bit register for signal <LFSR_Proc.LFSR_Reg<4>>.
+    Found 1-bit register for signal <LFSR_Proc.LFSR_Reg<3>>.
+    Found 1-bit register for signal <LFSR_Proc.LFSR_Reg<2>>.
+    Found 1-bit register for signal <LFSR_Proc.LFSR_Reg<1>>.
+    Found 1-bit register for signal <LFSR_Proc.LFSR_Reg<0>>.
+    Summary:
+	inferred   6 D-type flip-flop(s).
+	inferred   6 Multiplexer(s).
+Unit <Lsfr> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 10
+ 8x10-bit single-port Read Only RAM                    : 8
+ 8x20-bit single-port Read Only RAM                    : 2
+# Adders/Subtractors                                   : 46
+ 10-bit adder                                          : 14
+ 11-bit adder                                          : 1
+ 11-bit addsub                                         : 1
+ 12-bit adder                                          : 1
+ 13-bit adder                                          : 6
+ 13-bit subtractor                                     : 1
+ 14-bit adder                                          : 2
+ 15-bit adder                                          : 1
+ 16-bit adder                                          : 3
+ 21-bit adder                                          : 2
+ 3-bit adder                                           : 6
+ 3-bit subtractor                                      : 3
+ 5-bit adder                                           : 2
+ 7-bit adder                                           : 2
+ 8-bit adder                                           : 1
+# Registers                                            : 116
+ 1-bit register                                        : 34
+ 10-bit register                                       : 15
+ 11-bit register                                       : 2
+ 12-bit register                                       : 1
+ 13-bit register                                       : 7
+ 16-bit register                                       : 9
+ 2-bit register                                        : 4
+ 21-bit register                                       : 2
+ 3-bit register                                        : 12
+ 4-bit register                                        : 1
+ 5-bit register                                        : 2
+ 6-bit register                                        : 23
+ 64-bit register                                       : 1
+ 7-bit register                                        : 2
+ 8-bit register                                        : 1
+# Comparators                                          : 63
+ 10-bit comparator greater                             : 11
+ 10-bit comparator lessequal                           : 3
+ 11-bit comparator greater                             : 6
+ 11-bit comparator lessequal                           : 5
+ 13-bit comparator greater                             : 3
+ 16-bit comparator lessequal                           : 3
+ 21-bit comparator greater                             : 2
+ 3-bit comparator greater                              : 6
+ 3-bit comparator lessequal                            : 3
+ 5-bit comparator greater                              : 2
+ 7-bit comparator greater                              : 11
+ 7-bit comparator lessequal                            : 7
+ 8-bit comparator greater                              : 1
+# Multiplexers                                         : 242
+ 1-bit 2-to-1 multiplexer                              : 119
+ 1-bit 3-to-1 multiplexer                              : 1
+ 1-bit 64-to-1 multiplexer                             : 1
+ 10-bit 2-to-1 multiplexer                             : 38
+ 11-bit 2-to-1 multiplexer                             : 3
+ 13-bit 2-to-1 multiplexer                             : 16
+ 13-bit 3-to-1 multiplexer                             : 1
+ 16-bit 2-to-1 multiplexer                             : 12
+ 16-bit 3-to-1 multiplexer                             : 1
+ 2-bit 2-to-1 multiplexer                              : 20
+ 2-bit 3-to-1 multiplexer                              : 1
+ 3-bit 2-to-1 multiplexer                              : 16
+ 3-bit 3-to-1 multiplexer                              : 1
+ 5-bit 2-to-1 multiplexer                              : 2
+ 6-bit 2-to-1 multiplexer                              : 3
+ 6-bit 3-to-1 multiplexer                              : 1
+ 6-bit 5-to-1 multiplexer                              : 3
+ 7-bit 2-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 1
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <CardBack.ngc>.
+Reading core <Numbers_Rom.ngc>.
+Reading core <Seeds_Rom.ngc>.
+Reading core <VRam_3Bit.ngc>.
+Loading core <CardBack> for timing and area information for instance <CB>.
+Loading core <Numbers_Rom> for timing and area information for instance <Num_Rom>.
+Loading core <Seeds_Rom> for timing and area information for instance <Seed_Rom>.
+Loading core <VRam_3Bit> for timing and area information for instance <Vram_D>.
+Loading core <VRam_3Bit> for timing and area information for instance <Vram_P1>.
+Loading core <VRam_3Bit> for timing and area information for instance <Vram_P2>.
+
+Synthesizing (advanced) Unit <Cards_Generator>.
+The following registers are absorbed into counter <r_Card_Number_Counter>: 1 register on signal <r_Card_Number_Counter>.
+The following registers are absorbed into counter <r_Card_Seed_Counter>: 1 register on signal <r_Card_Seed_Counter>.
+The following registers are absorbed into counter <r_HPOS>: 1 register on signal <r_HPOS>.
+Unit <Cards_Generator> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Dealer>.
+The following registers are absorbed into accumulator <r_Dealer_Sum_Down>: 1 register on signal <r_Dealer_Sum_Down>.
+The following registers are absorbed into accumulator <r_Dealer_Sum_Up>: 1 register on signal <r_Dealer_Sum_Up>.
+The following registers are absorbed into counter <r_Number_Card>: 1 register on signal <r_Number_Card>.
+The following registers are absorbed into counter <r_Number>: 1 register on signal <r_Number>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n1107> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 20-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <r_Number_Card> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n1098> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 20-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <r_Number>      |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <Dealer> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Debounce_Switch>.
+The following registers are absorbed into counter <r_Count>: 1 register on signal <r_Count>.
+Unit <Debounce_Switch> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Drawer>.
+The following registers are absorbed into counter <r_Vram_Counter_Dealer>: 1 register on signal <r_Vram_Counter_Dealer>.
+The following registers are absorbed into counter <r_Vram_Counter_1>: 1 register on signal <r_Vram_Counter_1>.
+The following registers are absorbed into counter <r_Vram_Counter_2>: 1 register on signal <r_Vram_Counter_2>.
+Unit <Drawer> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Player>.
+The following registers are absorbed into counter <r_Number_Card>: 1 register on signal <r_Number_Card>.
+The following registers are absorbed into counter <r_Number>: 1 register on signal <r_Number>.
+INFO:Xst:3231 - The small RAM <Mram_n0449> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 10-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <r_Number_Card> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_n0450> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 10-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <r_Number_Card> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_n0457> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 10-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <r_Number>      |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_n0456> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 10-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <r_Number>      |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <Player> synthesized (advanced).
+WARNING:Xst:2677 - Node <r_Offset_X_9> of sequential type is unconnected in block <Dealer>.
+WARNING:Xst:2677 - Node <r_Offset_Y_7> of sequential type is unconnected in block <Dealer>.
+WARNING:Xst:2677 - Node <r_Offset_Y_8> of sequential type is unconnected in block <Dealer>.
+WARNING:Xst:2677 - Node <r_Offset_Y_9> of sequential type is unconnected in block <Dealer>.
+WARNING:Xst:2677 - Node <r_Offset_Y_8> of sequential type is unconnected in block <Player>.
+WARNING:Xst:2677 - Node <r_Offset_Y_9> of sequential type is unconnected in block <Player>.
+WARNING:Xst:2677 - Node <r_Offset_X_8> of sequential type is unconnected in block <Player>.
+WARNING:Xst:2677 - Node <r_Offset_X_9> of sequential type is unconnected in block <Player>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 10
+ 8x10-bit single-port distributed Read Only RAM        : 8
+ 8x20-bit single-port distributed Read Only RAM        : 2
+# Adders/Subtractors                                   : 28
+ 10-bit adder                                          : 7
+ 11-bit adder                                          : 2
+ 11-bit addsub                                         : 1
+ 12-bit adder carry in                                 : 1
+ 13-bit adder                                          : 5
+ 13-bit adder carry in                                 : 1
+ 13-bit subtractor                                     : 1
+ 3-bit subtractor                                      : 3
+ 7-bit adder                                           : 2
+ 8-bit adder                                           : 4
+ 9-bit adder                                           : 1
+# Counters                                             : 14
+ 10-bit up counter                                     : 1
+ 16-bit up counter                                     : 3
+ 21-bit up counter                                     : 2
+ 3-bit up counter                                      : 6
+ 7-bit up counter                                      : 1
+ 8-bit up counter                                      : 1
+# Accumulators                                         : 2
+ 5-bit up accumulator                                  : 2
+# Registers                                            : 622
+ Flip-Flops                                            : 622
+# Comparators                                          : 63
+ 10-bit comparator greater                             : 11
+ 10-bit comparator lessequal                           : 3
+ 11-bit comparator greater                             : 6
+ 11-bit comparator lessequal                           : 5
+ 13-bit comparator greater                             : 3
+ 16-bit comparator lessequal                           : 3
+ 21-bit comparator greater                             : 2
+ 3-bit comparator greater                              : 6
+ 3-bit comparator lessequal                            : 3
+ 5-bit comparator greater                              : 2
+ 7-bit comparator greater                              : 11
+ 7-bit comparator lessequal                            : 7
+ 8-bit comparator greater                              : 1
+# Multiplexers                                         : 240
+ 1-bit 2-to-1 multiplexer                              : 118
+ 1-bit 3-to-1 multiplexer                              : 1
+ 1-bit 64-to-1 multiplexer                             : 1
+ 10-bit 2-to-1 multiplexer                             : 38
+ 11-bit 2-to-1 multiplexer                             : 3
+ 13-bit 2-to-1 multiplexer                             : 16
+ 13-bit 3-to-1 multiplexer                             : 1
+ 16-bit 2-to-1 multiplexer                             : 12
+ 16-bit 3-to-1 multiplexer                             : 1
+ 2-bit 2-to-1 multiplexer                              : 20
+ 2-bit 3-to-1 multiplexer                              : 1
+ 3-bit 2-to-1 multiplexer                              : 16
+ 3-bit 3-to-1 multiplexer                              : 1
+ 5-bit 2-to-1 multiplexer                              : 2
+ 6-bit 2-to-1 multiplexer                              : 3
+ 6-bit 3-to-1 multiplexer                              : 1
+ 6-bit 5-to-1 multiplexer                              : 3
+ 7-bit 2-to-1 multiplexer                              : 2
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <P2/r_Select_1> (without init value) has a constant value of 1 in block <Players_Manager>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <P2/r_Offset_X_0> has a constant value of 0 in block <Players_Manager>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <P2/r_Offset_Y_6> has a constant value of 0 in block <Players_Manager>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <P2/r_Offset_Y_5> has a constant value of 0 in block <Players_Manager>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <P2/r_Offset_Y_4> has a constant value of 0 in block <Players_Manager>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <P1/r_Select_0> (without init value) has a constant value of 1 in block <Players_Manager>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <P1/r_Offset_X_0> has a constant value of 0 in block <Players_Manager>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <P1/r_Offset_Y_6> has a constant value of 0 in block <Players_Manager>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <P1/r_Offset_Y_5> has a constant value of 0 in block <Players_Manager>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <P1/r_Offset_Y_4> has a constant value of 0 in block <Players_Manager>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_Offset_X_0> has a constant value of 0 in block <Dealer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Offset_Y_4> has a constant value of 0 in block <Dealer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Offset_Y_5> has a constant value of 0 in block <Dealer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Offset_Y_6> has a constant value of 0 in block <Dealer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r_deck_63> (without init value) has a constant value of 0 in block <Deck_Manager>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <r_deck_62> (without init value) has a constant value of 0 in block <Deck_Manager>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <r_deck_48> (without init value) has a constant value of 0 in block <Deck_Manager>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <r_deck_47> (without init value) has a constant value of 0 in block <Deck_Manager>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <r_deck_46> (without init value) has a constant value of 0 in block <Deck_Manager>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <r_deck_32> (without init value) has a constant value of 0 in block <Deck_Manager>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <r_deck_31> (without init value) has a constant value of 0 in block <Deck_Manager>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <r_deck_30> (without init value) has a constant value of 0 in block <Deck_Manager>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <r_deck_16> (without init value) has a constant value of 0 in block <Deck_Manager>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <r_deck_15> (without init value) has a constant value of 0 in block <Deck_Manager>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <r_deck_14> (without init value) has a constant value of 0 in block <Deck_Manager>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <r_deck_0> (without init value) has a constant value of 0 in block <Deck_Manager>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:1901 - Instance CR/mmcm_adv_inst in unit Master_Module of type MMCM_ADV has been replaced by MMCME2_ADV
+INFO:Xst:2261 - The FF/Latch <P1/r_Offset_X_3> in Unit <Players_Manager> is equivalent to the following 3 FFs/Latches, which will be removed : <P1/r_Offset_X_2> <P1/r_Offset_X_1> <P1/r_Offset_Y_1> 
+INFO:Xst:2261 - The FF/Latch <P2/r_Offset_X_7> in Unit <Players_Manager> is equivalent to the following FF/Latch, which will be removed : <P2/r_Offset_X_5> 
+INFO:Xst:2261 - The FF/Latch <P1/r_Offset_X_6> in Unit <Players_Manager> is equivalent to the following FF/Latch, which will be removed : <P1/r_Offset_X_4> 
+INFO:Xst:2261 - The FF/Latch <P1/r_Offset_Y_3> in Unit <Players_Manager> is equivalent to the following 2 FFs/Latches, which will be removed : <P1/r_Offset_Y_2> <P1/r_Offset_Y_0> 
+INFO:Xst:2261 - The FF/Latch <P2/r_Offset_X_3> in Unit <Players_Manager> is equivalent to the following 3 FFs/Latches, which will be removed : <P2/r_Offset_X_2> <P2/r_Offset_X_1> <P2/r_Offset_Y_1> 
+INFO:Xst:2261 - The FF/Latch <P2/r_Offset_X_6> in Unit <Players_Manager> is equivalent to the following FF/Latch, which will be removed : <P2/r_Offset_X_4> 
+INFO:Xst:2261 - The FF/Latch <P2/r_Offset_Y_3> in Unit <Players_Manager> is equivalent to the following 2 FFs/Latches, which will be removed : <P2/r_Offset_Y_2> <P2/r_Offset_Y_0> 
+INFO:Xst:2261 - The FF/Latch <P1/r_Offset_X_7> in Unit <Players_Manager> is equivalent to the following FF/Latch, which will be removed : <P1/r_Offset_X_5> 
+INFO:Xst:2261 - The FF/Latch <r_Offset_X_5> in Unit <Dealer> is equivalent to the following FF/Latch, which will be removed : <r_Offset_X_7> 
+INFO:Xst:2261 - The FF/Latch <r_Select_0> in Unit <Dealer> is equivalent to the following FF/Latch, which will be removed : <r_Select_1> 
+INFO:Xst:2261 - The FF/Latch <r_Offset_X_1> in Unit <Dealer> is equivalent to the following 6 FFs/Latches, which will be removed : <r_Offset_X_2> <r_Offset_X_3> <r_Offset_Y_0> <r_Offset_Y_1> <r_Offset_Y_2> <r_Offset_Y_3> 
+WARNING:Xst:3001 - This design contains one or more registers or latches with an active
+   asynchronous set and asynchronous reset. While this circuit can be built,
+   it creates a sub-optimal implementation in terms of area, power and
+   performance. For a more optimal implementation Xilinx highly recommends
+   one of the following:
+
+          1) Remove either the set or reset from all registers and latches if
+             not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Zynq asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    LFSR_Proc.LFSR_Reg_5 in unit <Lsfr>
+    LFSR_Proc.LFSR_Reg_4 in unit <Lsfr>
+    LFSR_Proc.LFSR_Reg_3 in unit <Lsfr>
+    LFSR_Proc.LFSR_Reg_2 in unit <Lsfr>
+    LFSR_Proc.LFSR_Reg_1 in unit <Lsfr>
+    LFSR_Proc.LFSR_Reg_0 in unit <Lsfr>
+
+
+Optimizing unit <Master_Module> ...
+
+Optimizing unit <Debounce_Switch> ...
+
+Optimizing unit <Players_Manager> ...
+WARNING:Xst:1293 - FF/Latch <P2/r_VPOS_9> has a constant value of 0 in block <Players_Manager>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <P2/r_HPOS_9> has a constant value of 0 in block <Players_Manager>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <P1/r_VPOS_9> has a constant value of 0 in block <Players_Manager>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <P1/r_HPOS_9> has a constant value of 0 in block <Players_Manager>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <P2/r_VPOS_9> has a constant value of 0 in block <Players_Manager>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <P2/r_VPOS_8> has a constant value of 0 in block <Players_Manager>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <P2/r_VPOS_7> has a constant value of 0 in block <Players_Manager>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <P1/r_VPOS_9> has a constant value of 0 in block <Players_Manager>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <P1/r_VPOS_8> has a constant value of 0 in block <Players_Manager>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <P1/r_VPOS_7> has a constant value of 0 in block <Players_Manager>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <Cards_Generator> ...
+
+Optimizing unit <Dealer> ...
+WARNING:Xst:1293 - FF/Latch <r_HPOS_9> has a constant value of 0 in block <Dealer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_VPOS_9> has a constant value of 0 in block <Dealer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_VPOS_8> has a constant value of 0 in block <Dealer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_VPOS_9> has a constant value of 0 in block <Dealer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_HPOS_8> has a constant value of 0 in block <Dealer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_HPOS_9> has a constant value of 0 in block <Dealer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_VPOS_7> has a constant value of 0 in block <Dealer>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <Deck_Manager> ...
+
+Optimizing unit <Lsfr> ...
+
+Optimizing unit <Vga> ...
+
+Optimizing unit <Synchronizer> ...
+
+Optimizing unit <Drawer> ...
+WARNING:Xst:1293 - FF/Latch <r_HPOS_7> has a constant value of 0 in block <Dealer>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Players_Mod/P1/r_Number_2> has a constant value of 0 in block <Master_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Players_Mod/P2/r_Number_2> has a constant value of 0 in block <Master_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Players_Mod/P1/r_HPOS_7> has a constant value of 0 in block <Master_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Players_Mod/P1/r_HPOS_8> has a constant value of 0 in block <Master_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Players_Mod/P1/r_HPOS_9> has a constant value of 0 in block <Master_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Players_Mod/P2/r_HPOS_7> has a constant value of 0 in block <Master_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Players_Mod/P2/r_HPOS_8> has a constant value of 0 in block <Master_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Players_Mod/P2/r_HPOS_9> has a constant value of 0 in block <Master_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Number_2> has a constant value of 0 in block <Master_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Number_1> has a constant value of 0 in block <Master_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <Players_Mod/P1/r_Memory_Card_4_0> of sequential type is unconnected in block <Master_Module>.
+WARNING:Xst:2677 - Node <Players_Mod/P1/r_Memory_Card_4_1> of sequential type is unconnected in block <Master_Module>.
+WARNING:Xst:2677 - Node <Players_Mod/P1/r_Memory_Card_4_2> of sequential type is unconnected in block <Master_Module>.
+WARNING:Xst:2677 - Node <Players_Mod/P1/r_Memory_Card_4_3> of sequential type is unconnected in block <Master_Module>.
+WARNING:Xst:2677 - Node <Players_Mod/P1/r_Memory_Card_4_4> of sequential type is unconnected in block <Master_Module>.
+WARNING:Xst:2677 - Node <Players_Mod/P1/r_Memory_Card_4_5> of sequential type is unconnected in block <Master_Module>.
+WARNING:Xst:2677 - Node <Players_Mod/P2/r_Memory_Card_4_0> of sequential type is unconnected in block <Master_Module>.
+WARNING:Xst:2677 - Node <Players_Mod/P2/r_Memory_Card_4_1> of sequential type is unconnected in block <Master_Module>.
+WARNING:Xst:2677 - Node <Players_Mod/P2/r_Memory_Card_4_2> of sequential type is unconnected in block <Master_Module>.
+WARNING:Xst:2677 - Node <Players_Mod/P2/r_Memory_Card_4_3> of sequential type is unconnected in block <Master_Module>.
+WARNING:Xst:2677 - Node <Players_Mod/P2/r_Memory_Card_4_4> of sequential type is unconnected in block <Master_Module>.
+WARNING:Xst:2677 - Node <Players_Mod/P2/r_Memory_Card_4_5> of sequential type is unconnected in block <Master_Module>.
+WARNING:Xst:2677 - Node <Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Memory_Card_4_5> of sequential type is unconnected in block <Master_Module>.
+WARNING:Xst:2677 - Node <Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Memory_Card_4_4> of sequential type is unconnected in block <Master_Module>.
+WARNING:Xst:2677 - Node <Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Memory_Card_4_3> of sequential type is unconnected in block <Master_Module>.
+WARNING:Xst:2677 - Node <Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Memory_Card_4_2> of sequential type is unconnected in block <Master_Module>.
+WARNING:Xst:2677 - Node <Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Memory_Card_4_1> of sequential type is unconnected in block <Master_Module>.
+WARNING:Xst:2677 - Node <Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Memory_Card_4_0> of sequential type is unconnected in block <Master_Module>.
+WARNING:Xst:2677 - Node <Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Memory_Card_3_5> of sequential type is unconnected in block <Master_Module>.
+WARNING:Xst:2677 - Node <Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Memory_Card_3_4> of sequential type is unconnected in block <Master_Module>.
+WARNING:Xst:2677 - Node <Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Memory_Card_3_3> of sequential type is unconnected in block <Master_Module>.
+WARNING:Xst:2677 - Node <Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Memory_Card_3_2> of sequential type is unconnected in block <Master_Module>.
+WARNING:Xst:2677 - Node <Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Memory_Card_3_1> of sequential type is unconnected in block <Master_Module>.
+WARNING:Xst:2677 - Node <Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Memory_Card_3_0> of sequential type is unconnected in block <Master_Module>.
+WARNING:Xst:2677 - Node <Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Memory_Card_2_5> of sequential type is unconnected in block <Master_Module>.
+WARNING:Xst:2677 - Node <Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Memory_Card_2_4> of sequential type is unconnected in block <Master_Module>.
+WARNING:Xst:2677 - Node <Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Memory_Card_2_3> of sequential type is unconnected in block <Master_Module>.
+WARNING:Xst:2677 - Node <Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Memory_Card_2_2> of sequential type is unconnected in block <Master_Module>.
+WARNING:Xst:2677 - Node <Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Memory_Card_2_1> of sequential type is unconnected in block <Master_Module>.
+WARNING:Xst:2677 - Node <Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Memory_Card_2_0> of sequential type is unconnected in block <Master_Module>.
+INFO:Xst:2261 - The FF/Latch <Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_Sum_Up_0> in Unit <Master_Module> is equivalent to the following FF/Latch, which will be removed : <Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_Dealer_Sum_Down_0> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Master_Module, actual ratio is 7.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 664
+ Flip-Flops                                            : 664
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Master_Module.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1531
+#      GND                         : 7
+#      INV                         : 19
+#      LUT1                        : 180
+#      LUT2                        : 74
+#      LUT3                        : 155
+#      LUT4                        : 130
+#      LUT5                        : 196
+#      LUT6                        : 296
+#      MUXCY                       : 221
+#      MUXF7                       : 4
+#      VCC                         : 7
+#      XORCY                       : 242
+# FlipFlops/Latches                : 664
+#      FD                          : 6
+#      FDC                         : 4
+#      FDCE                        : 61
+#      FDE                         : 52
+#      FDP                         : 6
+#      FDPE                        : 62
+#      FDR                         : 66
+#      FDRE                        : 402
+#      FDS                         : 2
+#      FDSE                        : 3
+# RAMS                             : 21
+#      RAMB18E1                    : 1
+#      RAMB36E1                    : 20
+# Clock Buffers                    : 3
+#      BUFG                        : 3
+# IO Buffers                       : 26
+#      IBUF                        : 6
+#      IBUFG                       : 1
+#      OBUF                        : 19
+# Others                           : 1
+#      MMCME2_ADV                  : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7z010clg400-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             664  out of  35200     1%  
+ Number of Slice LUTs:                 1050  out of  17600     5%  
+    Number used as Logic:              1050  out of  17600     5%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1162
+   Number with an unused Flip Flop:     498  out of   1162    42%  
+   Number with an unused LUT:           112  out of   1162     9%  
+   Number of fully used LUT-FF pairs:   552  out of   1162    47%  
+   Number of unique control sets:        70
+
+IO Utilization: 
+ Number of IOs:                          29
+ Number of bonded IOBs:                  26  out of    100    26%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               21  out of     60    35%  
+    Number using Block RAM only:         21
+ Number of BUFG/BUFGCTRLs:                3  out of     32     9%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CR/clkout0                         | BUFG                   | 538   |
+CR/clkout1                         | BUFG                   | 165   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                                                                                                                                                                                                                                                                                  | Buffer(FF name)                                                                                                                                             | Load  |
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Vga_Mod/Vram_D/N1(Vga_Mod/Vram_D/XST_GND:G)                                                                                                                                                                                                                                                     | NONE(Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B)   | 12    |
+Vga_Mod/Vram_P1/N1(Vga_Mod/Vram_P1/XST_GND:G)                                                                                                                                                                                                                                                   | NONE(Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B)  | 12    |
+Vga_Mod/Vram_P2/N1(Vga_Mod/Vram_P2/XST_GND:G)                                                                                                                                                                                                                                                   | NONE(Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B)  | 12    |
+Players_Mod/CB/N1(Players_Mod/CB/XST_GND:G)                                                                                                                                                                                                                                                     | NONE(Players_Mod/CB/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)        | 2     |
+Players_Mod/CG/Num_Rom/N1(Players_Mod/CG/Num_Rom/XST_GND:G)                                                                                                                                                                                                                                     | NONE(Players_Mod/CG/Num_Rom/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)| 2     |
+Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/cascadelata_tmp(Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)   | 2     |
+Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/cascadelatb_tmp(Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)   | 2     |
+Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/cascadelata_tmp(Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)   | 2     |
+Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/cascadelatb_tmp(Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)   | 2     |
+Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/cascadelata_tmp(Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)   | 2     |
+Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/cascadelatb_tmp(Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(Vga_Mod/Vram_D/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)   | 2     |
+Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/cascadelata_tmp(Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)  | 2     |
+Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/cascadelatb_tmp(Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)  | 2     |
+Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/cascadelata_tmp(Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)  | 2     |
+Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/cascadelatb_tmp(Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)  | 2     |
+Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/cascadelata_tmp(Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)  | 2     |
+Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/cascadelatb_tmp(Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(Vga_Mod/Vram_P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)  | 2     |
+Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/cascadelata_tmp(Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)  | 2     |
+Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/cascadelatb_tmp(Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)  | 2     |
+Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/cascadelata_tmp(Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)  | 2     |
+Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/cascadelatb_tmp(Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)  | 2     |
+Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/cascadelata_tmp(Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)  | 2     |
+Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/cascadelatb_tmp(Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(Vga_Mod/Vram_P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T)  | 2     |
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.541ns (Maximum Frequency: 393.546MHz)
+   Minimum input arrival time before clock: 1.969ns
+   Maximum output required time after clock: 0.534ns
+   Maximum combinational path delay: 0.897ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CR/clkout0'
+  Clock period: 2.422ns (frequency: 412.950MHz)
+  Total number of paths / destination ports: 15831 / 1064
+-------------------------------------------------------------------------
+Delay:               2.422ns (Levels of Logic = 4)
+  Source:            Players_Mod/CG/r_VPOS_6 (FF)
+  Destination:       Players_Mod/CG/r_Output_Card_Data_2 (FF)
+  Source Clock:      CR/clkout0 rising
+  Destination Clock: CR/clkout0 rising
+
+  Data Path: Players_Mod/CG/r_VPOS_6 to Players_Mod/CG/r_Output_Card_Data_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             8   0.232   0.582  Players_Mod/CG/r_VPOS_6 (Players_Mod/CG/r_VPOS_6)
+     LUT6:I0->O            1   0.043   0.289  Players_Mod/CG/GND_50_o_r_VPOS[6]_AND_32_o1 (Players_Mod/CG/GND_50_o_r_VPOS[6]_AND_32_o1)
+     LUT3:I2->O            1   0.043   0.289  Players_Mod/CG/GND_50_o_r_VPOS[6]_AND_32_o3_SW0 (N113)
+     LUT6:I5->O            6   0.043   0.312  Players_Mod/CG/GND_50_o_r_VPOS[6]_AND_32_o3 (Players_Mod/CG/GND_50_o_r_VPOS[6]_AND_32_o)
+     LUT6:I5->O            3   0.043   0.289  Players_Mod/CG/_n02521 (Players_Mod/CG/_n0252)
+     FDSE:S                    0.255          Players_Mod/CG/r_Output_Card_Data_0
+    ----------------------------------------
+    Total                      2.422ns (0.659ns logic, 1.763ns route)
+                                       (27.2% logic, 72.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CR/clkout1'
+  Clock period: 2.541ns (frequency: 393.546MHz)
+  Total number of paths / destination ports: 4872 / 316
+-------------------------------------------------------------------------
+Delay:               2.541ns (Levels of Logic = 6)
+  Source:            Vga_Mod/Syncro/HPOS_2 (FF)
+  Destination:       Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_10 (FF)
+  Source Clock:      CR/clkout1 rising
+  Destination Clock: CR/clkout1 rising
+
+  Data Path: Vga_Mod/Syncro/HPOS_2 to Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDPE:C->Q            16   0.232   0.611  Vga_Mod/Syncro/HPOS_2 (Vga_Mod/Syncro/HPOS_2)
+     LUT5:I0->O           22   0.043   0.385  Vga_Mod/Syncro/HPOS[10]_PWR_13_o_LessThan_20_o111 (Vga_Mod/Syncro/HPOS[10]_PWR_13_o_LessThan_20_o11)
+     LUT3:I2->O            7   0.043   0.371  Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_A811 (Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_A81)
+     LUT6:I4->O            1   0.043   0.289  Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_A111 (Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_A<9>)
+     LUT4:I3->O            1   0.043   0.000  Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_lut<9> (Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_lut<9>)
+     MUXCY:S->O            0   0.230   0.000  Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_cy<9> (Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_cy<9>)
+     XORCY:CI->O           1   0.251   0.000  Vga_Mod/Syncro/Mmux_GND_43_o_HPOS[10]_mux_26_OUT_rs_xor<10> (Vga_Mod/Syncro/GND_43_o_HPOS[10]_mux_26_OUT<10>)
+     FDE:D                    -0.001          Vga_Mod/Syncro/r_MemorySyncro_HPOS_4_10
+    ----------------------------------------
+    Total                      2.541ns (0.885ns logic, 1.656ns route)
+                                       (34.8% logic, 65.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CR/clkout0'
+  Total number of paths / destination ports: 2592 / 1098
+-------------------------------------------------------------------------
+Offset:              1.969ns (Levels of Logic = 4)
+  Source:            i_Master_Switch_Combo_1 (PAD)
+  Destination:       Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_HPOS_6 (FF)
+  Destination Clock: CR/clkout0 rising
+
+  Data Path: i_Master_Switch_Combo_1 to Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_HPOS_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            83   0.000   0.458  i_Master_Switch_Combo_1_IBUF (i_Master_Switch_Combo_1_IBUF)
+     LUT2:I0->O           16   0.043   0.619  Players_Mod/_n00381 (Players_Mod/_n0038)
+     LUT6:I0->O            4   0.043   0.303  Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/_n0783_inv1 (Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/_n0907_inv1)
+     LUT6:I5->O            7   0.043   0.307  Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/_n0907_inv2 (Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/_n0907_inv)
+     FDRE:CE                   0.153          Players_Mod/Dealer_Fantastic_Component_Ultra_Mega_Wow_Lol_Wtf_JhonCeena_ROTFL/r_HPOS_0
+    ----------------------------------------
+    Total                      1.969ns (0.282ns logic, 1.687ns route)
+                                       (14.3% logic, 85.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CR/clkout1'
+  Total number of paths / destination ports: 181 / 181
+-------------------------------------------------------------------------
+Offset:              1.859ns (Levels of Logic = 3)
+  Source:            i_Master_On (PAD)
+  Destination:       Vga_Mod/Syncro/r_MemorySyncro_VPOS_4_9 (FF)
+  Destination Clock: CR/clkout1 rising
+
+  Data Path: i_Master_On to Vga_Mod/Syncro/r_MemorySyncro_VPOS_4_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            73   0.000   0.655  i_Master_On_IBUF (Vga_Mod/Syncro/i_Sync_Reset_inv)
+     LUT6:I1->O            1   0.043   0.542  Vga_Mod/Syncro/_n01331 (Vga_Mod/Syncro/_n01331)
+     LUT5:I0->O           10   0.043   0.321  Vga_Mod/Syncro/_n01333 (Vga_Mod/Syncro/_n0133)
+     FDRE:R                    0.255          Vga_Mod/Syncro/r_MemorySyncro_VPOS_4_0
+    ----------------------------------------
+    Total                      1.859ns (0.341ns logic, 1.518ns route)
+                                       (18.3% logic, 81.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CR/clkout0'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.530ns (Levels of Logic = 1)
+  Source:            Deb_Mod/r_State (FF)
+  Destination:       o_Master_Led<0> (PAD)
+  Source Clock:      CR/clkout0 rising
+
+  Data Path: Deb_Mod/r_State to o_Master_Led<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               5   0.232   0.298  Deb_Mod/r_State (Deb_Mod/r_State)
+     OBUF:I->O                 0.000          o_Master_Led_0_OBUF (o_Master_Led<0>)
+    ----------------------------------------
+    Total                      0.530ns (0.232ns logic, 0.298ns route)
+                                       (43.8% logic, 56.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CR/clkout1'
+  Total number of paths / destination ports: 18 / 18
+-------------------------------------------------------------------------
+Offset:              0.534ns (Levels of Logic = 1)
+  Source:            Vga_Mod/Draw/o_Draw_RGB_1 (FF)
+  Destination:       o_Master_G<5> (PAD)
+  Source Clock:      CR/clkout1 rising
+
+  Data Path: Vga_Mod/Draw/o_Draw_RGB_1 to o_Master_G<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              6   0.232   0.302  Vga_Mod/Draw/o_Draw_RGB_1 (Vga_Mod/Draw/o_Draw_RGB_1)
+     OBUF:I->O                 0.000          o_Master_G_5_OBUF (o_Master_G<5>)
+    ----------------------------------------
+    Total                      0.534ns (0.232ns logic, 0.302ns route)
+                                       (43.4% logic, 56.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Delay:               0.897ns (Levels of Logic = 2)
+  Source:            i_Master_On (PAD)
+  Destination:       CR/mmcm_adv_inst:RST (PAD)
+
+  Data Path: i_Master_On to CR/mmcm_adv_inst:RST
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            73   0.000   0.392  i_Master_On_IBUF (Vga_Mod/Syncro/i_Sync_Reset_inv)
+     INV:I->O            463   0.053   0.452  r_Master_Reset1_INV_0 (r_Master_Reset)
+    MMCME2_ADV:RST             0.000          CR/mmcm_adv_inst
+    ----------------------------------------
+    Total                      0.897ns (0.053ns logic, 0.844ns route)
+                                       (5.9% logic, 94.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CR/clkout0
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CR/clkout0     |    2.422|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock CR/clkout1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CR/clkout1     |    2.541|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 93.00 secs
+Total CPU time to Xst completion: 92.94 secs
+ 
+--> 
+
+Total memory usage is 460740 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  107 (   0 filtered)
+Number of infos    :   21 (   0 filtered)
+
