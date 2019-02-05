@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/Develop/Xlinx/PROJECT/Master_Mark_2/TB_isim_beh.exe" -prj "D:/Develop/Xlinx/PROJECT/Master_Mark_2/TB_beh.prj" "work.TB" 

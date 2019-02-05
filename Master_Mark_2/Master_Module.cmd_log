@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "C:/Users/Stefano/Desktop/Master_Mark_2/Master_Module.xst" -ofn "C:/Users/Stefano/Desktop/Master_Mark_2/Master_Module.syr" 
+xst -intstyle ise -ifn "C:/Users/Stefano/Desktop/Master_Mark_2/Master_Module.xst" -ofn "C:/Users/Stefano/Desktop/Master_Mark_2/Master_Module.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ZYBO_Master.ucf -p xc7z010-clg400-3 Master_Module.ngc Master_Module.ngd  
+map -intstyle ise -p xc7z010-clg400-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Master_Module_map.ncd Master_Module.ngd Master_Module.pcf 
+par -w -intstyle ise -ol high -mt off Master_Module_map.ncd Master_Module.ncd Master_Module.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Master_Module.twx Master_Module.ncd -o Master_Module.twr Master_Module.pcf -ucf ZYBO_Master.ucf 
+bitgen -intstyle ise -f Master_Module.ut Master_Module.ncd 
+xst -intstyle ise -ifn "C:/Users/Stefano/Desktop/Master_Mark_2/Master_Module.xst" -ofn "C:/Users/Stefano/Desktop/Master_Mark_2/Master_Module.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ZYBO_Master.ucf -p xc7z010-clg400-3 Master_Module.ngc Master_Module.ngd  
+map -intstyle ise -p xc7z010-clg400-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Master_Module_map.ncd Master_Module.ngd Master_Module.pcf 
+par -w -intstyle ise -ol high -mt off Master_Module_map.ncd Master_Module.ncd Master_Module.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Master_Module.twx Master_Module.ncd -o Master_Module.twr Master_Module.pcf -ucf ZYBO_Master.ucf 
+bitgen -intstyle ise -f Master_Module.ut Master_Module.ncd 

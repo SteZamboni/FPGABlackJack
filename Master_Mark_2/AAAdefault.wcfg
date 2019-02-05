@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Stefano/Desktop/Master_Mark_2/TB_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="cards_constants" />
+            <top_module name="constants" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_signed" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="tb" />
+            <top_module name="textio" />
+            <top_module name="vcomponents" />
+            <top_module name="vital_primitives" />
+            <top_module name="vital_timing" />
+            <top_module name="vpkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="18" />
+   <wvobject fp_name="/tb/i_master_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">i_master_clk</obj_property>
+      <obj_property name="ObjectShortName">i_master_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/i_master_reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">i_master_reset</obj_property>
+      <obj_property name="ObjectShortName">i_master_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/Players_Mod/CG/i_cg_reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">i_cg_reset</obj_property>
+      <obj_property name="ObjectShortName">i_cg_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/i_master_switch" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">i_master_switch</obj_property>
+      <obj_property name="ObjectShortName">i_master_switch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/o_master_r" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">o_master_r[4:0]</obj_property>
+      <obj_property name="ObjectShortName">o_master_r[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/o_master_g" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">o_master_g[5:0]</obj_property>
+      <obj_property name="ObjectShortName">o_master_g[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/o_master_b" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">o_master_b[4:0]</obj_property>
+      <obj_property name="ObjectShortName">o_master_b[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/Vga_Mod/Syncro/hpos" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">hpos</obj_property>
+      <obj_property name="ObjectShortName">hpos</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/Vga_Mod/Syncro/vpos" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">vpos</obj_property>
+      <obj_property name="ObjectShortName">vpos</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/Vga_Mod/Vram_P1/addra" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addra[15:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/Vga_Mod/Vram_P1/dina" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dina[2:0]</obj_property>
+      <obj_property name="ObjectShortName">dina[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/Vga_Mod/Vram_P1/wea" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wea[0:0]</obj_property>
+      <obj_property name="ObjectShortName">wea[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/Players_Mod/P1/o_player_vram_address" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">o_player_vram_address[15:0]</obj_property>
+      <obj_property name="ObjectShortName">o_player_vram_address[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/Players_Mod/P1/o_player_vram_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">o_player_vram_data[2:0]</obj_property>
+      <obj_property name="ObjectShortName">o_player_vram_data[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/Players_Mod/P1/o_player_vram_select" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">o_player_vram_select[1:0]</obj_property>
+      <obj_property name="ObjectShortName">o_player_vram_select[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/Players_Mod/DM/o_found" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">o_found</obj_property>
+      <obj_property name="ObjectShortName">o_found</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/Players_Mod/P1/r_card_received" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">r_card_received[5:0]</obj_property>
+      <obj_property name="ObjectShortName">r_card_received[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/Players_Mod/CG/r_card_ack" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r_card_ack</obj_property>
+      <obj_property name="ObjectShortName">r_card_ack</obj_property>
+   </wvobject>
+</wave_config>

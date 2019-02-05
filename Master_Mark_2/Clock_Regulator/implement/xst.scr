@@ -1,0 +1,9 @@
+run
+-ifmt MIXED
+-top Clock_Regulator_exdes
+-p xc6vlx75t-ff484-3
+-ifn xst.prj
+-ofn Clock_Regulator_exdes
+-keep_hierarchy soft 
+-equivalent_register_removal no 
+-max_fanout 65535
